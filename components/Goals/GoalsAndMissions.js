@@ -23,7 +23,7 @@ const GoalsAndMissions = () => {
          
 
           <div className="flex lg:flex-row flex-col justify-center  mt-3 gap-4 w-full">
-            <div className="flex flex-col mt-10 gap-6 w-3/4">
+            <div className="flex flex-col mt-10 gap-6 w-full sm:w-3/4">
               <GoalsBox
                 text1={"At our core"}
                 text2={

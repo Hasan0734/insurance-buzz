@@ -8,11 +8,12 @@ export const Testimonials = () => {
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    
     responsive: [{ breakpoint: "1343px" }],
   };
   return (
     <div className="mt-10 ">
-      <div className=" text-center container mx-auto">
+      <div className=" text-center container mx-auto overflow-hidden">
         <Slider {...settings}>
           <div className="bg-white my-20">
             <div className="bg-[#61b1e7]  pb-20 sm:pb-24 xl:pb-0 rounded-md">

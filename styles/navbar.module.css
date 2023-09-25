@@ -10,7 +10,7 @@
   transition: all 0.3s ease-in-out;
   position: sticky;
   top: 0px;
-  padding: 20px;
+  padding: 10px;
   z-index: 100;
 }
 

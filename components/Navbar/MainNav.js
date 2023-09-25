@@ -255,7 +255,7 @@ export default function MainNav() {
                         {item.name === "Life Insurance" && (
                           <>
                             {console.log(item.name, "Item")}
-                            <Dropdown menu={{ items: lifeInsuranceItems }}>
+                            <Dropdown  menu={{ items: lifeInsuranceItems, colorBgContainer: "#fff" }}>
                               <div className="flex items-center gap-1  px-2">
                                 <a
                                   key={item.name}
@@ -276,6 +276,7 @@ export default function MainNav() {
                             </Dropdown>
                           </>
                         )}
+
                         {item.name === "Travel Insurance" && (
                           <>
                             {console.log(item.name, "Item")}

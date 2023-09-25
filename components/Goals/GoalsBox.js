@@ -28,7 +28,7 @@ const GoalsBox = ({ text1, text2 }) => {
 
             <ChevronUpIcon
               className={`${
-                open ? "rotate-180 transform" : ""
+                open ? "rotate-180 transform" : "" 
               } h-5 w-5 text-black`}
             />
 
