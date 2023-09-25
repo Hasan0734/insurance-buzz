@@ -152,7 +152,7 @@ const MainFooter = () => {
           </div>
         </div>
       </div>
-      <div className='mt-14 text-sm text-white flex md:flex-row flex-col gap-5 justify-between'>
+      <div className='container mx-auto mt-14 text-sm text-white flex md:flex-row flex-col gap-5 justify-between'>
         <span>2023 © InsuranceBuzz - All right reserved</span>
         <div className='grid md:grid-cols-4 grid-cols-2 gap-4'>
           <span
