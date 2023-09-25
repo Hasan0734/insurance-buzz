@@ -255,7 +255,12 @@ export default function MainNav() {
                         {item.name === "Life Insurance" && (
                           <>
                             {console.log(item.name, "Item")}
-                            <Dropdown  menu={{ items: lifeInsuranceItems, colorBgContainer: "#fff" }}>
+                            <Dropdown
+                              menu={{
+                                items: lifeInsuranceItems,
+                                
+                              }}
+                            >
                               <div className="flex items-center gap-1  px-2">
                                 <a
                                   key={item.name}
