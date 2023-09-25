@@ -14,7 +14,7 @@ const AutoInsurance = () => {
             insurance, individuals have the option to borrow from or withdraw
             funds from the accumulating savings portion, which grows without
             taxation throughout their lifetime.`}
-        color='#FF9801CC'
+        color='#103825cc'
       />
       <div className='relative top-[-165px]'>
         <ContactForm />

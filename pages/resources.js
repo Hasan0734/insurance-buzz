@@ -24,11 +24,11 @@ const ResourcesPage = () => {
         color={'#5393becc'}
         position='top'
       />
-      <div className='bg-[#305fa9] relative top-[-165px]'>
+      <div className='bg-[#305fa9] relative left-0 right-0 top-[-165px]'>
         <div className='grid grid-cols-6'>
           <Anchor
             offsetTop={150}
-            style={{ background: '', height: '100vh', paddingTop: '40px' }}
+            style={{ background: '', height: '100vh', paddingTop: '40px',  }}
             replace
             items={[
               {
@@ -103,7 +103,6 @@ const ResourcesPage = () => {
               },
             ]}
           />
-
           <div className='col-span-5 pt-[20px] container mr-20'>
             <div
               className='p-4 '
@@ -332,6 +331,7 @@ const ResourcesPage = () => {
             {/* <div id='part-3' style={{ height: '100vh', background: '#61b1bc' }} />
           <div id='part-3' style={{ height: '100vh', background: '#8a7ec3' }} /> */}
           </div>
+
         </div>
       </div>
     </>

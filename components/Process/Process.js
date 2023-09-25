@@ -61,7 +61,7 @@ const Process = () => {
     }
   };
   return (
-    <div className="bg-[#27272db5]">
+    <div className="bg-[#2f1b0ab5]">
       <div className="flex flex-col px-5 py-20  max-w-7xl m-auto">
         <h2
           className="text-white p-[0.40rem] mb-2 text-center text-4xl font-bold

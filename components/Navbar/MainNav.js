@@ -225,6 +225,8 @@ export default function MainNav() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [router.asPath]);
+
+  
   return (
     <Disclosure as="nav">
       {({ open }) => (

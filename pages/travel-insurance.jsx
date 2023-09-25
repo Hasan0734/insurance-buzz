@@ -12,7 +12,7 @@ const TravelInsurancePage = () => {
             covering medical expenses in the event of illness or injury while
             traveling. Additionally, it provides protection against financial
             losses stemming from trip cancellations or interruptions.`}
-        color={'#ED8B09CC'}
+        color={'#252835cc'}
         img={'/images/sub/travel.jpg'}
       />
 

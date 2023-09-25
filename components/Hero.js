@@ -4,69 +4,6 @@ import Slider from "react-slick";
 import { useRouter } from "next/router";
 import CoverageBox from "../components/Coverages/CoverageBox";
 
-const services = [
-  {
-    id: 1,
-    title: "Life Insurance",
-    image: "/images/new/life-new.jpeg",
-    url: "/life-insurance",
-  },
-  {
-    id: 2,
-    title: "Super Visa Insurance",
-    image: "/images/new/super-visa.jpeg",
-    url: "/visitor-canada",
-  },
-  {
-    id: 3,
-    title: "Visitor to Canada",
-    image: "/images/new/visitor.png",
-    url: "/travel-insurance",
-  },
-  {
-    id: 4,
-    title: "Travel Insurance",
-    image: "/images/sub/travel-new.png",
-    url: "/international-student-insurance",
-  },
-  {
-    id: 5,
-    title: "Intl student Insurance",
-    image: "/images/new/intl-new.jpg",
-    url: "/investments/rrsp",
-  },
-  {
-    id: 6,
-    title: "RRSP / TFSA",
-    image: "/images/new/rrsp.jpeg",
-    url: "/investments/resp",
-  },
-  {
-    id: 7,
-    title: "RESP",
-    image: "/images/new/resp-new.jpeg",
-    url: "/investments/resp",
-  },
-  {
-    id: 8,
-    title: "Critical Illness Insurance",
-    image: "/images/new/critical-illness.jpg",
-    url: "/life-insurance/critical-illness-insurance",
-  },
-  {
-    id: 9,
-    title: "Disability Insurance",
-    image: "/images/new/disability-insurance.jpeg",
-    url: "/life-insurance/disability-insurance",
-  },
-  {
-    id: 10,
-    title: "Health Insurance",
-    image: "/images/sub/health-new.jpeg",
-    url: "/life-insurance/health-insurance",
-  },
-];
-
 const Hero = () => {
   const [sticky, setSticky] = useState(false);
 
@@ -102,7 +39,7 @@ const Hero = () => {
   return (
     <>
       <div className="bg-[#45A1D3CC] pt-44">
-        <div className=" h-full max-w-7xl m-auto py-4 xl:px-0 sm:px-10 pb-22 overflow-x-hidden">
+        <div className=" h-full max-w-7xl m-auto flex flex-col gap-5 py-4 xl:px-0 px-10 pb-22 ">
           <div>
             <Slider {...settings}>
               <div className="flex px-[24px] flex-col gap-5">
@@ -111,7 +48,7 @@ const Hero = () => {
                 </h1>
 
                 <h3 className="text-[#EDEDED] text-base lg:w-[40%] w-full">
-                  “Where Your Legacy Begins, Safeguarding Generations Ahead.”
+                  Where Your Legacy Begins, Safeguarding Generations Ahead.
                 </h3>
                 <div className="flex gap-2 mt-6">
                   <button
@@ -150,7 +87,7 @@ const Hero = () => {
                 </h1>
 
                 <h3 className="text-[#EDEDED] text-base lg:w-[40%] w-full">
-                  “Your Passport to Peace of Mind and Family Reunions.”
+                  Your Passport to Peace of Mind and Family Reunions.
                 </h3>
                 <div className="flex gap-2 mt-6">
                   <button
@@ -169,8 +106,8 @@ const Hero = () => {
                 </h1>
 
                 <h3 className="text-[#EDEDED] text-base lg:w-[40%] w-full">
-                  “Safeguarding What Matters Most - Your Home, Your Peace of
-                  Mind.”
+                  Safeguarding What Matters Most - Your Home, Your Peace of
+                  Mind.
                 </h3>
                 <div className="flex gap-2 mt-6">
                   <button
@@ -210,8 +147,8 @@ const Hero = () => {
                 </h1>
 
                 <h3 className="text-[#EDEDED] text-base lg:w-[40%] w-full">
-                  “Secure Your Tomorrow with RRSP &amp; TFSA – Where Smart
-                  Investing Meets Tax Benefits.”
+                  Secure Your Tomorrow with RRSP &amp; TFSA – Where Smart
+                  Investing Meets Tax Benefits.
                 </h3>
                 <div className="flex gap-2 mt-6">
                   <button
@@ -227,24 +164,79 @@ const Hero = () => {
           </div>
         </div>
 
-        <h2
-          className="text-white p-[0.40rem] mb-2 text-center text-4xl font-bold
+        <div className="mt-5">
+          <h2
+            className="text-white p-[0.40rem] mb-2 text-center text-4xl font-bold
        "
-        >
-          <span className=" relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1">
-            Our Services
-          </span>
-        </h2>
+          >
+            <span className=" relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1">
+              Testimonials
+            </span>
+          </h2>
+        </div>
+        <div className="grid xl:grid-cols-5 sm:grid-cols-3 grid-cols-1 gap-5 sm:px-20 px-10 py-10">
+          <CoverageBox
+            onClick={() => router.push("/life-insurance")}
+            image={"/images/new/life-new.jpeg"}
+            position="80% 10%"
+            text={"Life Insurance"}
+          />
+          <CoverageBox
+            onClick={() => router.push("/super-visa-insurance")}
+            image={"/images/new/super-visa.jpeg"}
+            text={"Super Visa Insurance"}
+          />
+          <CoverageBox
+            onClick={() => router.push("/visitor-canada")}
+            image={"/images/new/visitor.png"}
+            text={"Visitor to Canada"}
+          />
+          <CoverageBox
+            onClick={() => router.push("/travel-insurance")}
+            image={"/images/sub/travel-new.png"}
+            text={"Travel Insurance"}
+            position="10% 4%"
+          />
+          <CoverageBox
+            onClick={() => router.push("/international-student-insurance")}
+            image={"/images/new/intl-new.jpg"}
+            // image={'/images/new/international-students.jpg'}
+            text={"Intl student insurance"}
+          />
+        </div>
 
-        <div className="max-w-7xl mx-auto grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2  grid-cols-1 gap-5  px-4 pt-10 pb-16">
-          {services.map((service) => (
-            <CoverageBox
-              key={service.id}
-              onClick={() => router.push(service.url)}
-              image={service.image}
-              text={service.title}
-            />
-          ))}
+        <div className="grid xl:grid-cols-5 sm:grid-cols-3 grid-cols-1 gap-5 sm:px-20 px-10 py-10">
+          <CoverageBox
+            onClick={() => router.push("/investments/rrsp")}
+            image={"/images/new/rrsp.jpeg"}
+            text={"RRSP / TFSA"}
+          />
+          <CoverageBox
+            onClick={() => router.push("/investments/resp")}
+            image={"/images/new/resp-new.jpeg"}
+            text={"RESP"}
+            position="10% 20%"
+          />
+          <CoverageBox
+            onClick={() =>
+              router.push("/life-insurance/critical-illness-insurance")
+            }
+            image={"/images/new/critical-illness.jpg"}
+            text={"Critical Illness Insurance"}
+            position="25% 10%"
+          />
+          <CoverageBox
+            onClick={() => router.push("/life-insurance/disability-insurance")}
+            image={"/images/new/disability-insurance.jpeg"}
+            text={"Disability Insurance"}
+            position="10% 10%"
+          />
+          <CoverageBox
+            onClick={() => router.push("/life-insurance/health-insurance")}
+            image={"/images/sub/health-new.jpeg"}
+            text={"Health Insurance"}
+            position="10% 20%"
+          />
         </div>
       </div>
     </>

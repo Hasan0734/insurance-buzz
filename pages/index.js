@@ -29,30 +29,6 @@ export default function Home() {
 
       <div
         style={{
-          background: `url(${"/images/new/life-insurance.jpeg"})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="relative top-[-165px]"
-      >
-        <Process />
-      </div>
-
-      <div
-        // style={{
-        //   background: `url(${"/images/sub/mission.jpg"})`,
-        //   backgroundRepeat: "no-repeat",
-        //   backgroundSize: "cover",
-        //   backgroundPosition: "center",
-        // }}
-        className="relative top-[-165px] my-20"
-      >
-        <GoalsAndMissions />
-      </div>
-
-      <div
-        style={{
           background: `url(${"/images/new/team-trust.jpg"})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
@@ -75,38 +51,53 @@ export default function Home() {
         <LifeSlider />
       </div>
 
-      <div className="px-5 relative top-[-135px] xl:px-0 mt-16 bg-[#FFDB58] py-20">
+      <div
+        className="px-5 relative top-[-135px] xl:px-0 mt-16  py-20 after:absolute after:w-full after:h-full after:inset-0
+         after:bg-black/10 -z-[11] after:-z-10"
+        style={{
+          background: "url(/images/5348666.jpg)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div
           style={{ boxShadow: "0px 5px 7px 0px rgb(114 114 114 / 25%)" }}
-          className=" px-5 py-6  xl:max-w-7xl max-w-screen-lg rounded-xl bg-white m-auto"
+          className=" px-5 py-6  xl:max-w-7xl max-w-screen-lg rounded-xl backdrop-blur bg-white/80 m-auto opacity-100 z-10"
         >
           <div className="">
             <span className="text-black text-center text-xl mb-4 font-bold">
               Reliable Insurance Solutions
             </span>
           </div>
-          <div className="grid mt-4 md:grid-cols-3 grid-cols-1 gap-5">
+          <div className="grid mt-4 md:grid-cols-4 grid-cols-1 gap-5">
             <InsuranceSolutions
-              image={"/images/building.png"}
+              image={"/images/dollar-symbol.png"}
+              countNumber={0}
+              suffix={''}
+              title={"Investment"}
+            />
+            <InsuranceSolutions
+              image={"/images/building-orange.png"}
               countNumber={30}
               suffix={"+"}
               title={"Insurance Companies"}
             />
             <InsuranceSolutions
-              image={"/images/insurance-policy.png"}
+              image={"/images/insurance-policy-orange.png"}
               countNumber={12}
               suffix={"K+"}
               title={"Insurance Policies"}
             />
             <InsuranceSolutions
-              image={"/images/insurancesol2.png"}
+              image={"/images/insurancesol2-orange.png"}
               countNumber={8}
               suffix={"+"}
               title={"Insurance Types"}
             />
           </div>
         </div>
-      </div> 
+      </div>
 
       <div className="">
         <h2
