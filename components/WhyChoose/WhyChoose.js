@@ -51,7 +51,7 @@ const WhyChoose = () => {
                   <span>Commission-free advisors</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <CheckIcon width={22}   className="text-red-500"/>
+                  <CheckIcon width={22}   className="text-green-500"/>
                   <span>Apply from anywhere</span>
                 </li>
               </ul>
