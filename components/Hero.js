@@ -170,7 +170,7 @@ const Hero = () => {
        "
           >
             <span className=" relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1">
-              Services
+              Our Services
             </span>
           </h2>
         </div>
