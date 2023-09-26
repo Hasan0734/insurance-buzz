@@ -1,3 +1,4 @@
+import { UserIcon } from "@heroicons/react/24/outline";
 import Slider from "react-slick";
 
 const testimonials = [
@@ -100,12 +101,13 @@ export const Testimonials = () => {
                         <p>{testimonial.body}</p>
                       </blockquote>
                       <figcaption className="mt-8 text-base">
-                        <div className="font-semibold text-white">
-                          {testimonial.name}
+                        <div className="font-semibold text-white flex items-center justify-center gap-3">
+                          <UserIcon className="bg-gray-200 rounded-full p-2" width={35} color="black"/>
+                        <span> {testimonial.name}</span>
                         </div>
-                        <div className="mt-1 text-gray-200">
+                        {/* <div className="mt-1 text-gray-200">
                           {testimonial.title}
-                        </div>
+                        </div> */}
                       </figcaption>
                     </figure>
                   </div>

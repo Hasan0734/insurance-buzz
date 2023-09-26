@@ -1,7 +1,5 @@
 import InsuranceSolutions from "@/components/InsuranceSolutions";
-import Coverages from "@/components/Coverages/Coverages";
-import Process from "@/components/Process/Process";
-import GoalsAndMissions from "@/components/Goals/GoalsAndMissions";
+
 import WhyChoose from "@/components/WhyChoose/WhyChoose";
 import Hero from "@/components/Hero";
 import Head from "next/head";
@@ -9,7 +7,10 @@ import TravelSlider from "@/components/TravelSlider";
 import LifeSlider from "@/components/LifeSlider";
 import { Testimonials } from "@/components/Testimonials/Testimonials";
 
+import Comparisons from "@/components/Comparisons/Comparisons";
+
 export default function Home() {
+  
   return (
     <>
       <Head>
@@ -164,25 +165,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div
-        className="px-5  xl:px-0 my-16  py-32 after:absolute after:w-full after:h-full after:inset-0
-         after:bg-black/10 -z-[11] after:-z-10"
-        style={{
-          background: "url(/images/happy-family.jpg)",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
-        <div className=" px-5 py-10  xl:max-w-7xl max-w-screen-lg rounded bg-back backdrop-blur-sm  bg-white/75 m-auto opacity-100 z-10">
-          <div className="text-center">
-            <h2 className="text-[46px] font-bold">1,254</h2>
-            <h4 className="text-xl font-bold">Canadians</h4>
-            <p className="text-base text-gray-600 mt-1">
-              have compared rates and saved money <b>over the last 24 hours</b>
-            </p>
-          </div>
-        </div>
-      </div>
+
+      <Comparisons />
 
       <div className="">
         <h2
