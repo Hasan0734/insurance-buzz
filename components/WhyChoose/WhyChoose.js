@@ -31,27 +31,27 @@ const WhyChoose = () => {
               </h3>
               <ul className="mt-5 px-10 flex flex-col gap-8 text-gray-700  text-lg font-semibold">
                 <li className=" flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                  <XMarkIcon width={22} className="text-red-500" />
                   <span>Simple, quick, online</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                  <XMarkIcon width={22}  className="text-red-500" />
                   <span>Compare the market</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <CheckIcon width={22} />
+                  <CheckIcon width={22}   className="text-green-500"/>
                   <span>Live advisor support</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                  <XMarkIcon width={22}  className="text-red-500"/>
                   <span>Impartial, trusted advice</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                  <XMarkIcon width={22}  className="text-red-500"/>
                   <span>Commission-free advisors</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <CheckIcon width={22} />
+                  <CheckIcon width={22}   className="text-red-500"/>
                   <span>Apply from anywhere</span>
                 </li>
               </ul>
@@ -64,27 +64,27 @@ const WhyChoose = () => {
               </div>
               <ul className="px-10 flex flex-col gap-8 text-white text-lg font-semibold">
                 <li className="  flex items-center gap-2">
-                  <CheckIcon width={22} />
+                  <CheckIcon width={22}   />
                   <span>Simple, quick, online</span>
                 </li>
                 <li className="  flex items-center gap-2">
-                  <CheckIcon width={22} />
+                  <CheckIcon width={22}   />
                   <span>Compare the market</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <CheckIcon width={22} />
+                  <CheckIcon width={22}   />
                   <span>Live advisor support</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <CheckIcon width={22} />
+                  <CheckIcon width={22}   />
                   <span>Impartial, trusted advice</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <CheckIcon width={22} />
+                  <CheckIcon width={22}   />
                   <span>Commission-free advisors</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <CheckIcon width={22} />
+                  <CheckIcon width={22}   />
                   <span>Apply from anywhere</span>
                 </li>
               </ul>
@@ -104,27 +104,27 @@ const WhyChoose = () => {
               </h3>
               <ul className="mt-5 px-10 flex flex-col gap-8 text-lg font-semibold text-gray-700">
                 <li className="flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                 <XMarkIcon width={22}  className="text-red-500"/>
                   <span>Simple, quick, online</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                 <XMarkIcon width={22}  className="text-red-500"/>
                   <span>Compare the market</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <CheckIcon width={22} />
+                  <CheckIcon width={22}   className="text-green-500"/>
                   <span>Live advisor support</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                 <XMarkIcon width={22}  className="text-red-500"/>
                   <span>Impartial, trusted advice</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                 <XMarkIcon width={22}  className="text-red-500"/>
                   <span>Commission-free advisors</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                 <XMarkIcon width={22}  className="text-red-500"/>
                   <span>Apply from anywhere</span>
                 </li>
               </ul>
