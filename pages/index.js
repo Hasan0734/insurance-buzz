@@ -116,6 +116,52 @@ export default function Home() {
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged.
           </p>
+
+          <div className="relative my-20 max-w-5xl mx-auto">
+            <div className="flex items-center justify-center">
+              <div className="relative h-[332px] md:h-[672px] w-[332px] md:w-[672px] rounded-full bg-[#cff3fd] flex items-center justify-center">
+                <img
+                  className="w-[70%]"
+                  src="/images/smart-phone.png"
+                  alt="phone-imge"
+                />
+              </div>
+            </div>
+
+            <div className=" md:absolute  inset-0 mt-5 sm:mt-0">
+              <div className="flex flex-col items-center gap-10 h-full justify-center">
+                <div className="bg-white p-5 shadow-md rounded-md max-w-sm md:self-start">
+                  <h4 className="text-orange-500 text-lg font-semibold uppercase">
+                    Step 1
+                  </h4>
+                  <h2 className="text-xl font-bold">Get quotes quickly</h2>
+                  <p className="text-sm">
+                    Get the best quotes across insurance companies
+                  </p>
+                </div>
+                <div className="bg-white p-5 shadow-md rounded-md max-w-sm md:self-end">
+                  <h4 className="text-orange-500 text-lg font-semibold uppercase">
+                    Step 2
+                  </h4>
+                  <h2 className="text-xl font-bold">Zero in on best option</h2>
+                  <p className="text-sm">
+                    Our advisors guide you to the best product and company for
+                    your unique situations
+                  </p>
+                </div>
+                <div className="bg-white p-5 shadow-md rounded-md max-w-sm md:self-start">
+                  <h4 className="text-orange-500 text-lg font-semibold uppercase">
+                    Step 3
+                  </h4>
+                  <h2 className="text-xl font-bold">Submit application</h2>
+                  <p className="text-sm">
+                    Once finalised, we help submit your application, get you
+                    approved and deliver your policy
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div

@@ -14,8 +14,16 @@ const WhyChoose = () => {
             Why InsuranceBuzz
           </span>
         </h2>
+        <div className="mt-8 text-lg text-gray-200 container mx-auto">
+            When it comes to securing your future, InsuranceBuzz is the name you
+            can trust. We offer personalized insurance advisory services that
+            cater to your unique needs. Our team is committed to providing you
+            with unbiased advice and helping you make informed decisions. With
+            InsuranceBuzz, you can have peace of mind knowing that your
+            financial security is in good hands.
+          </div>
 
-        <div className="bg-[#e3e4f4]  mt-10  py-20">
+        <div className=" mt-10  py-20">
           <div className="grid grid-cols-1 md:grid-cols-3 container mx-auto h-full  gap-7 items-center">
             <div className=" rounded-xl bg-white shadow-lg p-7 py-10">
               <h3 className="text-2xl font-bold text-center text-gray-900 bg-orange-200 rounded-md py-5">
@@ -76,7 +84,7 @@ const WhyChoose = () => {
                   <span>Commission-free advisors</span>
                 </li>
                 <li className=" flex items-center gap-2">
-                  <XMarkIcon width={22} />
+                  <CheckIcon width={22} />
                   <span>Apply from anywhere</span>
                 </li>
               </ul>
@@ -123,15 +131,9 @@ const WhyChoose = () => {
             </div>
           </div>
         </div>
+
         <div className="container mx-auto">
-          <div className="mt-8 text-lg text-gray-200">
-            When it comes to securing your future, InsuranceBuzz is the name you
-            can trust. We offer personalized insurance advisory services that
-            cater to your unique needs. Our team is committed to providing you
-            with unbiased advice and helping you make informed decisions. With
-            InsuranceBuzz, you can have peace of mind knowing that your
-            financial security is in good hands.
-          </div>
+        
           <div className="my-10 grid sm:grid-cols-3 grid-cols-1 gap-10">
             <WhyChooseBox
               image={"/images/trust.png"}
