@@ -127,7 +127,7 @@ export default function Home() {
           backgroundSize: "cover",
         }}
       >
-        <div className=" px-5 py-10  xl:max-w-7xl max-w-screen-lg rounded bg-back backdrop-blur-sm border border-blue-500 bg-white/75 m-auto opacity-100 z-10">
+        <div className=" px-5 py-10  xl:max-w-7xl max-w-screen-lg rounded bg-back backdrop-blur-sm  bg-white/75 m-auto opacity-100 z-10">
           <div className="text-center">
             <h2 className="text-[46px] font-bold">1,254</h2>
             <h4 className="text-xl font-bold">Canadians</h4>
