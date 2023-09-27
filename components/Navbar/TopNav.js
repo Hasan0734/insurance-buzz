@@ -37,33 +37,7 @@ const TopNav = () => {
         </div>
 
         <div className='flex gap-5'>
-          <div className='flex gap-3 items-center justify-between'>
-            <i
-              style={{ color: 'white', fontSize: '25px' }}
-              className='fa fa-facebook-official cursor-pointer'
-              aria-hidden='true'
-            ></i>
-            {/* <i
-              style={{ color: 'white', fontSize: '25px' }}
-              className='fa fa-twitter-square cursor-pointer'
-              aria-hidden='true'
-            ></i> */}
-            <i
-              style={{ color: 'white', fontSize: '25px' }}
-              className='fa fa-linkedin-square cursor-pointer'
-              aria-hidden='true'
-            ></i>
-            <i
-              style={{ color: 'white', fontSize: '25px' }}
-              className='fa fa-whatsapp cursor-pointer'
-              aria-hidden='true'
-            ></i>
-            <i
-              style={{ color: 'white', fontSize: '25px' }}
-              className='fa fa-instagram cursor-pointer'
-              aria-hidden='true'
-            ></i>
-          </div>
+         
 
           <div className=' sm:flex hidden gap-3 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
             <img src='/images/navbarPhone.png' alt='navbar' />

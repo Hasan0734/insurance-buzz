@@ -56,7 +56,7 @@ export default function Home() {
         className="px-5 relative top-[-100px] xl:px-0 mt-16  py-20 after:absolute after:w-full after:h-full after:inset-0
          after:bg-black/10 -z-[11] after:-z-10"
         style={{
-          background: "url(/images/5348666.jpg)",
+          background: "url(/images/5348666.png)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -76,7 +76,7 @@ export default function Home() {
               image={"/images/dollar-symbol.png"}
               countNumber={0}
               suffix={""}
-              title={"Investment"}
+              title={"Fees"}
             />
             <InsuranceSolutions
               image={"/images/building-orange.png"}

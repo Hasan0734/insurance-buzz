@@ -10,7 +10,7 @@ export const ContactHero = () => {
         objectFit: 'cover',
       }}
     >
-      <div className='pt-60 pb-20 text-white bg-[#8a7ec3cc]'>
+      <div className='pt-60 pb-20 text-white bg-[#3d435db0]'>
         <div className='container mx-auto text-center'>
           <h1 className='text-6xl font-bold mb-2'>Contact Us</h1>
           <p className='text'>
@@ -18,7 +18,7 @@ export const ContactHero = () => {
             using the contact information below.
           </p>
 
-          <p className='my-6'>
+          <p className='my-2'>
             We strive to respond promptly, typically within one business day.
           </p>
 

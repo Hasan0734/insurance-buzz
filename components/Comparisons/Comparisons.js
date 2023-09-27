@@ -55,11 +55,11 @@ const Comparisons = () => {
           <div className="text-center">
             <h2 className="text-[46px] font-bold">
               <CountUp
-                duration={3}
+                duration={2}
                 preserveValue
                 redraw
-                start={0}
-                end={1250}
+                start={800}
+                end={Math.floor(Math.random() * (1250 - 800 + 1) + 800)}
                 suffix="+"
               />
             </h2>

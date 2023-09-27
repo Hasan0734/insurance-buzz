@@ -271,6 +271,7 @@ const ResourcesPage = () => {
 
               <div className='mt-8 container mx-auto flex flex-col gap-4'>
                 <Link
+                  target="_blank"
                   className='text-sm text-white underline'
                   href={
                     'https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/individuals-leaving-entering-canada-non-residents/newcomers-canada-immigrants.html'
@@ -279,6 +280,7 @@ const ResourcesPage = () => {
                   Newcomers to Canada
                 </Link>
                 <Link
+                  target="_blank"
                   className='text-sm text-white underline'
                   href={
                     'https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants.html'
@@ -287,6 +289,7 @@ const ResourcesPage = () => {
                   Services and information for new Immigrants{' '}
                 </Link>
                 <Link
+                  target="_blank"
                   className='text-sm text-white underline'
                   href={
                     'https://www.ontario.ca/page/apply-ohip-and-get-health-card'
@@ -295,6 +298,7 @@ const ResourcesPage = () => {
                   Apply for OHIP and get a health card
                 </Link>
                 <Link
+                  target="_blank"
                   className='text-sm text-white underline'
                   href={
                     'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams.html'
@@ -303,6 +307,7 @@ const ResourcesPage = () => {
                   Medical Examination
                 </Link>
                 <Link
+                  target="_blank"
                   className='text-sm text-white underline'
                   href={
                     'https://www.canada.ca/en/immigration-refugees-citizenship/services/visit- canada/parent-grandparent-super-visa/eligibility.html'
@@ -311,6 +316,7 @@ const ResourcesPage = () => {
                   Eligibility for Super visa
                 </Link>
                 <Link
+                  target="_blank"
                   className='text-sm text-white underline'
                   href={
                     'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5256-applying-visitor-visa-temporary-resident-visa.html#incometables'
@@ -319,6 +325,7 @@ const ResourcesPage = () => {
                   Income Requirements for super visa
                 </Link>
                 <Link
+                  target="_blank"
                   href={
                     'https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html'
                   }
