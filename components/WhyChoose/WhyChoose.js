@@ -108,7 +108,7 @@ const WhyChoose = () => {
                 ))}
               </ul>
             </div>
-            <div className=" rounded-xl bg-blue-300 shadow-lg p-7 pt-10 pb-10">
+            <div className=" rounded-xl bg-[#45A1D3] shadow-lg p-7 pt-10 pb-10">
               <div className="mb-5">
                 <h3 className="text-2xl font-bold text-center text-white bg-indigo-600 rounded-md py-5">
                   Insurance Buzz

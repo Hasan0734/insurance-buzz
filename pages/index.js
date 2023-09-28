@@ -121,7 +121,7 @@ export default function Home() {
             <div className='flex items-center justify-center'>
               <div className='relative h-[332px] md:h-[672px] w-[332px] md:w-[672px] rounded-full bg-[#cff3fd] flex items-center justify-center'>
                 <img
-                  className='w-[70%]'
+                  className='w-[60%]'
                   src='/images/smart-phone2.png'
                   alt='phone-imge'
                 />

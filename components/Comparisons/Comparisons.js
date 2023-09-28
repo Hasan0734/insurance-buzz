@@ -58,8 +58,8 @@ const Comparisons = () => {
                 duration={2}
                 preserveValue
                 redraw
-                start={800}
-                end={Math.floor(Math.random() * (1250 - 800 + 1) + 800)}
+                start={100}
+                end={Math.floor(Math.random() * (500 - 200 + 1) + 400)}
                 suffix="+"
               />
             </h2>
