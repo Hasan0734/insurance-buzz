@@ -78,15 +78,13 @@ const WhyChoose = () => {
   return (
     <div className="bg-[#151b32e5] text-white">
       <div className=" py-5 pt-16">
-        {/* <span className='bg-[#FFDB58] w-fit text-black p-[0.35rem] mb-2'>
-          Why InsuranceBuzz
-        </span> */}
+
         <h2 className="text-white p-[0.40rem] mb-2 text-center text-4xl font-bold">
           <span className=" relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1">
             Why InsuranceBuzz
           </span>
         </h2>
-        <div className="mt-8 text-lg text-gray-200 container mx-auto">
+        <div className="mt-8 text-md text-gray-200 container mx-auto">
           When it comes to securing your future, InsuranceBuzz is the name you
           can trust. We offer personalized insurance advisory services that
           cater to your unique needs. Our team is committed to providing you
@@ -105,7 +103,7 @@ const WhyChoose = () => {
                 {comparisons.map((item) => (
                   <li key={item.id} className=" flex items-center gap-2">
                    {item.icon}
-                    <span>{item.title}</span>
+                    <span className='text-md'>{item.title}</span>
                   </li>
                 ))}
               </ul>
@@ -120,7 +118,7 @@ const WhyChoose = () => {
                 {insuranceBuzz.map((items) => (
                   <li key={items.id} className=" flex items-center gap-2">
                     {items.icon}
-                    <span>{items.title}</span>
+                    <span className='text-md'>{items.title}</span>
                   </li>
                 ))}
               </ul>
@@ -142,7 +140,7 @@ const WhyChoose = () => {
               {comparisons.map((item) => (
                   <li key={item.id} className=" flex items-center gap-2">
                    {item.icon}
-                    <span>{item.title}</span>
+                    <span className='text-md'>{item.title}</span>
                   </li>
                 ))}
               </ul>

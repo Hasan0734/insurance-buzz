@@ -270,7 +270,7 @@ export default function MainNav() {
                                     item.current
                                       ? " text-white"
                                       : "text-gray-300  hover:text-white",
-                                    "rounded-md py-2 text-lg font-bold cursor-pointer"
+                                    "rounded-md py-2 text-md font-bold cursor-pointer"
                                   )}
                                   aria-current={
                                     item.current ? "page" : undefined
@@ -295,7 +295,7 @@ export default function MainNav() {
                                     item.current
                                       ? " text-white"
                                       : "text-gray-300  hover:text-white",
-                                    "rounded-md py-2 text-lg font-bold cursor-pointer"
+                                    "rounded-md py-2 text-md font-bold cursor-pointer"
                                   )}
                                   aria-current={
                                     item.current ? "page" : undefined
@@ -317,7 +317,7 @@ export default function MainNav() {
                                   item.current
                                     ? " text-white"
                                     : "text-gray-300  hover:text-white",
-                                  "rounded-md py-2 text-lg font-bold cursor-pointer"
+                                  "rounded-md py-2 text-md font-bold cursor-pointer"
                                 )}
                                 aria-current={item.current ? "page" : undefined}
                               >
@@ -337,7 +337,7 @@ export default function MainNav() {
                                 item.current
                                   ? " text-white"
                                   : "text-gray-300  hover:text-white",
-                                "rounded-md px-2 py-2 text-lg font-bold cursor-pointer"
+                                "rounded-md px-2 py-2 text-md font-bold cursor-pointer"
                               )}
                               aria-current={item.current ? "page" : undefined}
                             >
