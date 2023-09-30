@@ -31,9 +31,11 @@ const TopNav = () => {
           className='cursor-pointer flex items-center gap-2'
         >
           <img src='/images/logo.png' alt='logo' />
-          <span className='text-white font-bold text-[26px]'>
-            InsuranceBuzz
-          </span>
+          <div className='flex flex-col'>
+            <p className='text-white font-bold text-[26px] m-0'>InsuranceBuzz</p>
+            <p className='text-xs m-0 text-white '>Insurance Simplified, Buzz Amplified</p>
+          </div>
+          
         </div>
 
         <div className='flex gap-5'>

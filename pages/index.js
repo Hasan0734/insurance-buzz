@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Insurance Buzz</title>
+        <title>InsuranceBuzz</title>
       </Head>
       <div
         className=' relative top-[-165px] z-0 '
@@ -105,58 +105,58 @@ export default function Home() {
        '
           >
             <span className=' relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1'>
-              How Insurance Buzz Works?
+              How InsuranceBuzz Works?
             </span>
           </h2>
           <p className='max-w-5xl mx-auto mt-6 text-gray-600'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            Discover and secure the best insurance policies in seconds at
+            InsuranceBuzz, your trusted digital insurance marketplace. In less
+            than a minute, you can compare the top insurance companies in Canada
+            and be on your way to obtaining coverage, protecting your loved
+            ones, and enjoying peace of mind, all with the assurance that your
+            protection needs are taken care of. Our licensed experts are
+            dedicated to providing the highest level of customer service in the
+            industry, making InsuranceBuzz the ultimate destination for your
+            insurance needs.
           </p>
 
           <div className='relative my-20 max-w-5xl mx-auto'>
             <div className='flex items-center justify-center'>
               <div className='relative h-[332px] md:h-[672px] w-[332px] md:w-[672px] rounded-full bg-[#cff3fd] flex items-center justify-center'>
                 <img
-                  className='w-[60%]'
+                  className='w-[80%]'
                   src='/images/smart-phone2.png'
                   alt='phone-imge'
                 />
               </div>
             </div>
-
             <div className=' md:absolute  inset-0 mt-5 sm:mt-0'>
               <div className='flex flex-col items-center gap-10 h-full justify-center'>
                 <div className='bg-white p-5 shadow-md rounded-md max-w-sm md:self-start'>
                   <h4 className='text-orange-500 text-lg font-semibold uppercase'>
                     Step 1
                   </h4>
-                  <h2 className='text-xl font-bold'>Get quotes quickly</h2>
+                  <h2 className='text-xl font-bold'>Get Quick Quotes</h2>
                   <p className='text-sm'>
-                    Get the best quotes across insurance companies
+                  Rapid Quotes estimates from top insurance companies, Your First Step to Savings.
                   </p>
                 </div>
                 <div className='bg-white p-5 shadow-md rounded-md max-w-sm md:self-end'>
                   <h4 className='text-orange-500 text-lg font-semibold uppercase'>
                     Step 2
                   </h4>
-                  <h2 className='text-xl font-bold'>Zero in on best option</h2>
+                  <h2 className='text-xl font-bold'>Choose the Right Plan</h2>
                   <p className='text-sm'>
-                    Our advisors guide you to the best product and company for
-                    your unique situations
+                  Our experts help you pick the best insurance plan for your needs.
                   </p>
                 </div>
                 <div className='bg-white p-5 shadow-md rounded-md max-w-sm md:self-start'>
                   <h4 className='text-orange-500 text-lg font-semibold uppercase'>
                     Step 3
                   </h4>
-                  <h2 className='text-xl font-bold'>Submit application</h2>
+                  <h2 className='text-xl font-bold'>Finish the Process</h2>
                   <p className='text-sm'>
-                    Once finalised, we help submit your application, get you
-                    approved and deliver your policy
+                  We take care of the paperwork to make it easy for you.
                   </p>
                 </div>
               </div>

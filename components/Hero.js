@@ -41,7 +41,7 @@ const Hero = () => {
       <div className='bg-[#45A1D3CC] pt-44'>
         <div className=' h-full max-w-7xl m-auto flex flex-col gap-5 py-4 xl:px-0 px-10 pb-22 '>
           <div>
-          {/* Slider */}
+            {/* Slider */}
             <Slider {...settings}>
               <div className='flex px-[24px] flex-col gap-5'>
                 <h1 className='sm:text-[40px] text-[20px] font-bold text-white'>
@@ -68,7 +68,7 @@ const Hero = () => {
                 </h1>
 
                 <h3 className='text-[#EDEDED] text-base lg:w-[40%] w-full'>
-                  Remember to include your travel insurance in your packing. You
+                  Remember to include your travel Insurance in your packing. You
                   can get your price estimates online right away.
                 </h3>
                 <div className='flex gap-2 mt-6'>
@@ -165,13 +165,31 @@ const Hero = () => {
           </div>
         </div>
 
-{/* Services */}
+        {/* Services */}
         <div className='grid xl:grid-cols-6 sm:grid-cols-3 grid-cols-1 gap-5 sm:px-20 px-10 py-10'>
           <CoverageBox
             onClick={() => router.push('/life-insurance')}
             image={'/images/new/life-new.jpeg'}
             position='80% 10%'
             text={'Life Insurance'}
+          />
+          <CoverageBox
+            onClick={() => router.push('/travel-insurance')}
+            image={'/images/sub/travel-new.png'}
+            text={'Travel Insurance'}
+            position='10% 4%'
+          />
+          <CoverageBox
+            onClick={() => router.push('/auto-insurance')}
+            image={'/images/new/auto-insurance.jpeg'}
+            position='50% 40%'
+            text={'Auto Insurance'}
+          />
+          <CoverageBox
+            onClick={() => router.push('/home-insurance')}
+            image={'/images/new/home-insurance.jpg'}
+            position='50% 40%'
+            text={'Home Insurance'}
           />
           <CoverageBox
             onClick={() => router.push('/super-visa-insurance')}
@@ -184,21 +202,23 @@ const Hero = () => {
             text={'Visitor to Canada'}
           />
           <CoverageBox
-            onClick={() => router.push('/travel-insurance')}
-            image={'/images/sub/travel-new.png'}
-            text={'Travel Insurance'}
-            position='10% 4%'
+            onClick={() => router.push('/life-insurance/health-insurance')}
+            image={'/images/sub/health-new.jpeg'}
+            text={'Health Insurance'}
+            position='10% 20%'
+          />
+          <CoverageBox
+            onClick={() =>
+              router.push('/life-insurance/critical-illness-insurance')
+            }
+            image={'/images/new/critical-illness.jpg'}
+            text={'Critical Illness Insurance'}
+            position='25% 10%'
           />
           <CoverageBox
             onClick={() => router.push('/international-student-insurance')}
             image={'/images/new/intl-new.jpg'}
-            text={'Intl student insurance'}
-          />
-          <CoverageBox
-            onClick={() => router.push('/home-insurance')}
-            image={'/images/new/home-insurance.jpg'}
-            position='50% 40%'
-            text={'Home insurance'}
+            text={'Intl student Insurance'}
           />
           <CoverageBox
             onClick={() => router.push('/investments/rrsp')}
@@ -212,30 +232,10 @@ const Hero = () => {
             position='10% 20%'
           />
           <CoverageBox
-            onClick={() =>
-              router.push('/life-insurance/critical-illness-insurance')
-            }
-            image={'/images/new/critical-illness.jpg'}
-            text={'Critical Illness Insurance'}
-            position='25% 10%'
-          />
-          <CoverageBox
             onClick={() => router.push('/life-insurance/disability-insurance')}
             image={'/images/new/disability-insurance.jpeg'}
             text={'Disability Insurance'}
             position='10% 10%'
-          />
-          <CoverageBox
-            onClick={() => router.push('/life-insurance/health-insurance')}
-            image={'/images/sub/health-new.jpeg'}
-            text={'Health Insurance'}
-            position='10% 20%'
-          />
-          <CoverageBox
-            onClick={() => router.push('/auto-insurance')}
-            image={'/images/new/auto-insurance.jpg'}
-            position='50% 40%'
-            text={'Auto insurance'}
           />
         </div>
       </div>

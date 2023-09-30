@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import React from 'react';
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import React from 'react'
 
 const MainFooter = () => {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <div className='bg-[#3D4351] py-10 px-5 pb-3 w-full'>
       <div className='grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 lg:gap-4 gap-10  container mx-auto'>
@@ -72,7 +72,7 @@ const MainFooter = () => {
               href='/travel-insurance'
               className='cursor-pointer text-white text-sm'
             >
-              Travel insurance
+              Travel Insurance
             </Link>
             <Link
               href='/international-student-insurance'
@@ -170,7 +170,7 @@ const MainFooter = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MainFooter;
+export default MainFooter

@@ -4,48 +4,42 @@ import Slider from 'react-slick'
 const testimonials = [
   {
     id: 4,
-    image:
-      '/images/testimonials/Kiranveer.jpg',
+    image: '/images/testimonials/Kiranveer.jpg',
     name: 'Kiranveer',
     title: '',
     body: 'The life insurance policy provided me with a sense of security and financial protection, in case of any events. I was pleased, with the to understand procedures and helpful guidance I received from Vidya.',
   },
   {
     id: 5,
-    image:
-      '/images/testimonials/Rahul Kolte.jpg',
+    image: '/images/testimonials/Rahul Kolte.jpg',
     name: 'Rahul Kolte',
     title: 'CEO of Workcation',
     body: 'My insurance advisor was extremely knowledgeable and patient. They took the time to explain all the options to me and helped me find the perfect coverage for my needs. I highly recommend them.',
   },
   {
     id: 1,
-    image:
-      '/images/testimonials/no-image.png',
+    image: '/images/testimonials/Shweta A.jpg',
     name: 'Shweta Appannavar',
     title: 'CEO of Workcation',
     body: "I had the pleasure of working with an insurance advisor who truly displayed a level of professionalism. They effortlessly explained the intricacies of insurance. Even assisted me in finding ways to save money on my policies. I am extremely satisfied, with their services. Couldn't be happier.",
   },
   {
     id: 2,
-    image:
-      '/images/testimonials/no-image.png',
+    image: '/images/testimonials/Shradhha.jpg',
     name: 'Shradhha Shah',
     title: 'CEO of Workcation',
     body: "I was really impressed, by the application process, great prices and outstanding customer service provided by Insurance Buzz. It gave me a sense of confidence and security throughout my trip. I can't imagine going on my adventure without their services!",
   },
   {
     id: 3,
-    image:
-      '/images/testimonials/no-image.png',
+    image: '/images/testimonials/Aditi k.jpg',
     name: 'Aditi K',
     title: 'CEO of Workcation',
     body: 'I chose Vidya from InsuranceBuzz as my advisor because their process is hassle free and they understood my needs. Their personalized solution perfectly aligns with my lifestyle. I would highly recommend her to others.',
   },
   {
     id: 6,
-    image:
-      '/images/testimonials/no-image.png',
+    image: '/images/testimonials/Pratik C.jpg',
     name: 'Pratik Chougule',
     title: 'CEO of Workcation',
     body: 'InsuranceBuzz is more, than an advisor. They are a partner, in my financial planning. Their knowledge and guidance have proven invaluable in assisting me with making informed choices regarding my insurance requirements.',
