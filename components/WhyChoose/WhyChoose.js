@@ -11,7 +11,7 @@ const insuranceBuzz = [
   },
   {
     id: 2,
-    title: 'Seamles online experience',
+    title: 'Seamless online experience',
     available: true,
     icon: <CheckIcon width={22} className='text-white' />,
   },
@@ -50,7 +50,7 @@ const comparisons = [
   },
   {
     id: 2,
-    title: 'Seamles online experience',
+    title: 'Seamless online experience',
     available: true,
     icon: <XMarkIcon width={22} className='text-red-500' />,
   },
