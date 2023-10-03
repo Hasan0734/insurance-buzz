@@ -11,10 +11,10 @@ export const ContactHero = () => {
       }}
     >
       <div className='pt-60 pb-20 text-white bg-[#3d435db0]'>
-        <div className='container mx-auto text-center flex items-center  '>
+        <div className='container mx-auto text-center flex items-center gap-10 '>
           <div>
             <h1 className='text-4xl font-bold mb-2 text-yellow-500'>Get in Touch</h1>
-            <p className='text-sm'>
+            <p className='text-lg'>
               Should you have any inquiries whatsoever, kindly reach out to us
               using the contact information below.
             </p>

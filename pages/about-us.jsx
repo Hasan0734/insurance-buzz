@@ -129,7 +129,7 @@ const AboutUsPage = () => {
        '
           >
             <span className=' relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1'>
-              Our team
+              Our Team
             </span>
           </h2>
           <div className='max-w-4xl mx-auto mt-10 text-justify text-base leading-8'>
@@ -148,35 +148,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-      <div className='bg-[#f3f3f3] pt-16'>
-        <div className='max-w-7xl mx-auto  px-4 lg:px-0'>
-          <h2
-            className='text-black p-[0.40rem] mb-2 text-center text-4xl font-bold
-       '
-          >
-            <span className=' relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1'>
-              Our Vision
-            </span>
-          </h2>
-          <div className='max-w-4xl mx-auto mt-5 text-justify text-base leading-8'>
-            Insurance buying is opaque and stressful. At PolicyAdvisor, we’re
-            building a new kind of insurance advisor, built for the way you
-            live. We combine <b>modern technology, intuitive design</b> and{' '}
-            <b>human expertise</b> to make insurance buying{' '}
-            <b>simpler, straightforward and stress-free.</b>
-            <br />
-            <br />
-            Sound good?
-          </div>
-          <div>
-            <img
-              className='w-full'
-              src='/images/web-scrns.png'
-              alt='web-scrns'
-            />
-          </div>
-        </div>
-      </div>
+
     </div>
   )
 }
