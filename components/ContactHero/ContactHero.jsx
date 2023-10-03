@@ -42,26 +42,6 @@ export const ContactHero = () => {
               <p className='text-xs'>Consultancy Available</p>
             </div>
           </div>
-
-          {/* 
-
-          <p className='my-2'>
-            We strive to respond promptly, typically within one business day.
-          </p> */}
-
-          {/* <div className='flex flex-col gap-8 mt-12'>
-            <div className='flex justify-center gap-12'>
-              <div className='flex flex-col justify-center items-center gap-3'>
-                <img src='/phone.svg' alt='phone' />
-                <p>+1 (647) 469-8766</p>
-              </div>
-
-              <div className='flex flex-col justify-center items-center gap-3'>
-                <img src='/mail.svg' alt='phone' />
-                <p>vidyakithur@gmail,com</p>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
