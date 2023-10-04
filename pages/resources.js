@@ -1,4 +1,4 @@
-import { Anchor, Collapse } from "antd";
+import { Anchor, Collapse, Menu } from "antd";
 import { lifeInsuranceItems } from "@/data/faqs/life-insurance";
 import { travelInsuranceItems } from "@/data/faqs/travel-insurance";
 import { termLifeInsuranceItems } from "@/data/faqs/term-life-insurance";
@@ -13,75 +13,74 @@ import { rrspInsuranceItems } from "@/data/faqs/rrsp";
 import { HeroSection } from "@/components/HeroSection/HeroSection";
 import { superVisaInsuranceFAQs } from "@/data/faqs/super-visa-insurance";
 import { internationalStudentsInsuranceFAQs } from "@/data/faqs/international-student-insurance";
+import { useState } from "react";
 
-const data = [
+const items = [
   {
     key: "life-insurance",
     href: "#life-insurance",
-    title: "Life Insurance",
+    label: "Life Insurance",
     children: [
       {
-       
         key: "critical-insurance",
         href: "#critical-insurance",
-        title: "Critical Illness Insurance",
+        label: "Critical Illness Insurance",
       },
       {
         key: "disability-insurance",
         href: "#disability-insurance",
-        title: "Disability Insurance",
+        label: "Disability Insurance",
       },
       {
         key: "health-insurance",
         href: "#health-insurance",
-        title: "Health Insurance",
-      }
+        label: "Health Insurance",
+      },
     ],
   },
 
   {
     key: "term-insurance",
     href: "#term-insurance",
-    title: "Term Life Insurance",
+    label: "Term Life Insurance",
   },
   {
     key: "travel-insurance",
     href: "#travel-insurance",
-    title: "Travel Insurance",
+    label: "Travel Insurance",
     children: [
       {
         key: "international-students-insurance",
         href: "#international-insurance",
-        title: "International Students Insurance",
+        label: "International Students Insurance",
       },
       {
         key: "supervisa-insurance",
         href: "#supervisa-insurance",
-        title: "Super Visa Insurance",
+        label: "Super Visa Insurance",
       },
-    ]
+    ],
   },
-
 
   {
     key: "investments",
     href: "#investments",
-    title: "Investments",
+    label: "Investments",
     children: [
       {
         key: "resp",
         href: "#resp",
-        title: "RESP",
+        label: "RESP",
       },
       {
         key: "rrsp",
         href: "#rrsp",
-        title: "RRSP",
+        label: "RRSP",
       },
       {
         key: "tfsa",
         href: "#tfsa",
-        title: "TFSA",
+        label: "TFSA",
       },
     ],
   },
@@ -89,16 +88,23 @@ const data = [
   {
     key: "claim-insurance",
     href: "#claim-insurance",
-    title: "Claim Process",
+    label: "Claim Process",
   },
   {
     key: "important-links",
     href: "#important-links",
-    title: "Important Links",
+    label: "Important Links",
   },
 ];
 
 const ResourcesPage = () => {
+  const [current, setCurrent] = useState("mail");
+
+  const onClick = (e) => {
+    console.log("click ", e);
+    setCurrent(e.key);
+  };
+
   return (
     <>
       <HeroSection
@@ -110,85 +116,24 @@ const ResourcesPage = () => {
       />
       <div className="bg-[#305fa9] relative left-0 right-0 top-[-165px]">
         <div className="grid grid-cols-6">
-          <Anchor
+          <Menu
+            onClick={onClick}
+            selectedKeys={[current]}
+            mode="inline"
+            items={items}
+            defaultSelectedKeys={["1"]}
+            defaultOpenKeys={["sub1"]}
+         
+
+          />
+          {/* <Anchor
             offsetTop={150}
             style={{ background: "", height: "100vh", paddingTop: "40px" }}
             replace
-            items={data}
+            items={items}
             
-            // items={[
-            //   {
-            //     key: "life-insurance",
-            //     href: "#life-insurance",
-            //     title: "Life Insurance",
-            //   },
-            //   {
-            //     key: "health-insurance",
-            //     href: "#health-insurance",
-            //     title: "Health Insurance",
-            //   },
-            //   {
-            //     key: "term-insurance",
-            //     href: "#term-insurance",
-            //     title: "Term Life Insurance",
-            //   },
-            //   {
-            //     key: "travel-insurance",
-            //     href: "#travel-insurance",
-            //     title: "Travel Insurance",
-            //   },
-            //   {
-            //     key: "supervisa-insurance",
-            //     href: "#supervisa-insurance",
-            //     title: "Super Visa Insurance",
-            //   },
-            //   {
-            //     key: "international-students-insurance",
-            //     href: "#international-insurance",
-            //     title: "International Students Insurance",
-            //   },
-            //   {
-            //     key: "disability-insurance",
-            //     href: "#disability-insurance",
-            //     title: "Disability Insurance",
-            //   },
-            //   {
-            //     key: "critical-insurance",
-            //     href: "#critical-insurance",
-            //     title: "Critical Illness Insurance",
-            //   },
-            //   {
-            //     key: "resp",
-            //     href: "#resp",
-            //     title: "RESP",
-            //   },
-            //   {
-            //     key: "rrsp",
-            //     href: "#rrsp",
-            //     title: "RRSP",
-            //   },
-            //   {
-            //     key: "tfsa",
-            //     href: "#tfsa",
-            //     title: "TFSA",
-            //   },
-            //   {
-            //     key: "critical-insurance",
-            //     href: "#critical-insurance",
-            //     title: "Critical Illness Insurance",
-            //   },
-            //   {
-            //     key: "claim-insurance",
-            //     href: "#claim-insurance",
-            //     title: "Claim Process",
-            //   },
-            //   {
-            //     key: "important-links",
-            //     href: "#important-links",
-            //     title: "Important Links",
-            //   },
-            // ]}
-          />
+            
+          /> */}
           <div className="col-span-5 pt-[20px] container mr-20">
             <div
               className="p-4 "
