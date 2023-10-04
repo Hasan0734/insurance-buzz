@@ -1,85 +1,94 @@
 // import MainNav from '@/components/NormalNav/MainNav';
 // import TopNav from '@/components/NormalNav/TopNav';
-import GoalsAndMissions from '@/components/Goals/GoalsAndMissions'
-import Process from '@/components/Process/Process'
-import React, { useEffect, useState } from 'react'
+import GoalsAndMissions from "@/components/Goals/GoalsAndMissions";
+import GoalsBox from "@/components/Goals/GoalsBox";
+import Process from "@/components/Process/Process";
+import ProcessBox from "@/components/Process/ProcessBox";
+import React, { useEffect, useState } from "react";
 
 const data = [
   {
     id: 1,
-    title: '',
-    text: 'We’re focused on changing the way Canadians buy insurance. In doing so, we affirm to certain principles:',
+    title: "",
+    text: "We’re focused on changing the way Canadians buy insurance. In doing so, we affirm to certain principles:",
   },
   {
     id: 2,
-    title: 'We put our customer first.',
-    text: 'We will make your insurance buying experience as seamless and pleasant as we can.',
+    title: "We put our customer first.",
+    text: "We will make your insurance buying experience as seamless and pleasant as we can.",
   },
   {
     id: 3,
-    title: 'We keep it simple.',
-    text: 'Enough said.',
+    title: "We keep it simple.",
+    text: "Enough said.",
   },
   {
     id: 4,
-    title: 'We’re always honest.',
-    text: 'Our advisors are salary-based and do not earn commissions. We’re on Team You and will only offer advice that is in your best interests. You have no obligation to buy anything if we don’t find a product at a price that you’re satisfied with.',
+    title: "We’re always honest.",
+    text: "Our advisors are salary-based and do not earn commissions. We’re on Team You and will only offer advice that is in your best interests. You have no obligation to buy anything if we don’t find a product at a price that you’re satisfied with.",
   },
   {
     id: 5,
-    title: 'We’re always available.',
-    text: 'We are always online. If you have questions about anything at all, we will do our best to provide you with answers no matter what time you’re asking, no appointment necessary.',
+    title: "We’re always available.",
+    text: "We are always online. If you have questions about anything at all, we will do our best to provide you with answers no matter what time you’re asking, no appointment necessary.",
   },
   {
     id: 6,
-    title: 'We only work with the best.',
-    text: 'We partner exclusively with the most trusted insurance companies in Canada, that are leaders in the protection industry.',
+    title: "We only work with the best.",
+    text: "We partner exclusively with the most trusted insurance companies in Canada, that are leaders in the protection industry.",
   },
   {
     id: 7,
-    title: 'We protect your privacy.',
-    text: 'Your security is our priority and your data is safe with us. We won’t sell your info to third parties.',
+    title: "We protect your privacy.",
+    text: "Your security is our priority and your data is safe with us. We won’t sell your info to third parties.",
   },
-]
+];
 
 const AboutUsPage = () => {
-  const [sticky, setSticky] = useState(false)
+  const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 100) {
-        setSticky(true)
+        setSticky(true);
       } else {
-        setSticky(false)
+        setSticky(false);
       }
-    }
+    };
 
     // Add the scroll event listener
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     // Clean up the event listener when the component unmounts or route changes
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className='relative'>
-      <div
-        className={`absolute left-0 right-0 top-[-165px] h-[165px] bg-[#62B1BCCC] `}
-      ></div>
+    <div>
 
-      <div className='bg-white  py-20'>
-        <div className='max-w-7xl mx-auto  px-4 lg:px-0'>
+    <div
+      className=" relative top-[-165px]"
+      style={{
+        background: `url("/images/new/team-trust.jpg")`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        objectFit: "cover",
+      }}
+    >
+      <div className="pt-60 pb-20 text-white bg-[#3d435db0]">
+        <div className="max-w-7xl mx-auto  px-4 lg:px-0">
           <h2
-            className='text-black p-[0.40rem] mb-2 text-center text-4xl font-bold
-       '
+            className="text-white p-[0.40rem] mb-2 text-center text-4xl font-bold
+       "
           >
-            <span className=' relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1'>
+            <span className=" relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1">
               Our story
             </span>
           </h2>
-          <div className='max-w-4xl mx-auto mt-5 text-justify text-base leading-8'>
+          <div className="max-w-4xl mx-auto mt-5 text-justify text-base leading-8">
             Connecting People Through Innovation The inception of InsuranceBuzz
             was rooted in a profound realization - the traditional insurance
             industry, with its complexities and rigid structures, often left
@@ -105,6 +114,19 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
+      </div>
+
+      <div
+        style={{
+          background: `url(${"/images/sub/mission.jpg"})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="relative top-[-165px]"
+      >
+        <GoalsAndMissions />
+      </div>
 
       <div
         style={{
@@ -113,26 +135,23 @@ const AboutUsPage = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
-        className=''
+        className="relative top-[-165px]"
       >
-        <Process />
+             <Process />
+
       </div>
 
-      <div className='relative  py-20'>
-        <GoalsAndMissions />
-      </div>
-
-      <div className='bg-white py-20'>
-        <div className='max-w-7xl mx-auto  px-4 lg:px-0'>
+      <div className="bg-white pt-20 relative top-[-165px]">
+        <div className="max-w-7xl mx-auto  px-4 lg:px-0">
           <h2
-            className='text-black p-[0.40rem] mb-2 text-center text-4xl font-bold
-       '
+            className="text-black p-[0.40rem] mb-2 text-center text-4xl font-bold
+       "
           >
-            <span className=' relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1'>
+            <span className=" relative after:absolute after:w-full after:h-[2px] after:rounded-full after:bg-orange-500 after:left-0 after:-bottom-1">
               Our Team
             </span>
           </h2>
-          <div className='max-w-4xl mx-auto mt-10 text-justify text-base leading-8'>
+          <div className="max-w-4xl mx-auto mt-10 text-justify text-base leading-8">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -148,9 +167,10 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-
+   
     </div>
-  )
-}
 
-export default AboutUsPage
+  );
+};
+
+export default AboutUsPage;
