@@ -49,12 +49,12 @@ export default function App({ Component, pageProps }) {
       <FloatingWhatsApp phoneNumber='+16474698766' accountName=' Vidya Kittur' avatar='/images/new/vidya-pic.png'/>
       {/* <CrispWithNoSSR /> */}
       <Component {...pageProps} />
-      {!isResourcesPage && (
+     
         <div>
           <Prefooter />
           <MainFooter />
         </div>
-      )}
+
     </>
   );
 }
