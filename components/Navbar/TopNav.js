@@ -1,28 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import React, { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 const TopNav = () => {
-  const [sticky, setSticky] = useState(false);
+  const [sticky, setSticky] = useState(false)
 
-  const router = useRouter();
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 100) {
-        setSticky(true);
+        setSticky(true)
       } else {
-        setSticky(false);
+        setSticky(false)
       }
-    };
+    }
 
     // Add the scroll event listener
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     // Clean up the event listener when the component unmounts or route changes
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [router.asPath]);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [router.asPath])
   return (
     <div>
       <div className='flex sm:flex-row flex-col justify-between items-center max-w-7xl xl:px-0 px-5 m-auto '>
@@ -30,12 +30,15 @@ const TopNav = () => {
           onClick={() => router.push('/')}
           className='cursor-pointer flex items-center gap-2'
         >
-          <img src='/images/logo.png' alt='logo' />
+          <img className='h-16' src='/images/logo.png' alt='logo' />
           <div className='flex flex-col'>
-            <p className='text-white font-bold text-[26px] m-0'>InsuranceBuzz</p>
-            <p className='text-xs m-0 text-white '>Insurance Simplified, Buzz Amplified</p>
+            <p className='text-white font-bold text-[26px] m-0'>
+              InsuranceBuzz
+            </p>
+            <p className='text-xs m-0 text-white '>
+              Insurance Simplified, Buzz Amplified
+            </p>
           </div>
-          
         </div>
 
         <div className='flex gap-5'>
@@ -49,7 +52,7 @@ const TopNav = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TopNav;
+export default TopNav

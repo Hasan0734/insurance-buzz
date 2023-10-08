@@ -14,6 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>InsuranceBuzz</title>
+        <link href='/images/logo.png' />
       </Head>
       <div
         className=' relative top-[-165px] z-0 '
@@ -138,7 +139,8 @@ export default function Home() {
                   </h4>
                   <h2 className='text-xl font-bold'>Get Quick Quotes</h2>
                   <p className='text-sm'>
-                  Rapid Quotes estimates from top insurance companies, Your First Step to Savings.
+                    Rapid Quotes estimates from top insurance companies, Your
+                    First Step to Savings.
                   </p>
                 </div>
                 <div className='bg-white p-5 shadow-md rounded-md max-w-sm md:self-end'>
@@ -147,7 +149,8 @@ export default function Home() {
                   </h4>
                   <h2 className='text-xl font-bold'>Choose the Right Plan</h2>
                   <p className='text-sm'>
-                  Our experts help you pick the best insurance plan for your needs.
+                    Our experts help you pick the best insurance plan for your
+                    needs.
                   </p>
                 </div>
                 <div className='bg-white p-5 shadow-md rounded-md max-w-sm md:self-start'>
@@ -156,7 +159,7 @@ export default function Home() {
                   </h4>
                   <h2 className='text-xl font-bold'>Finish the Process</h2>
                   <p className='text-sm'>
-                  We take care of the paperwork to make it easy for you.
+                    We take care of the paperwork to make it easy for you.
                   </p>
                 </div>
               </div>

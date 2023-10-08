@@ -6,20 +6,20 @@ const MainFooter = () => {
   const router = useRouter()
   return (
     <div className='bg-[#3D4351] py-10 px-5 pb-3 w-full'>
-      <div className='grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 lg:gap-4 gap-10  container mx-auto'>
-        <div className='flex flex-col gap-4'>
+      <div className='grid lg:grid-cols-6 sm:grid-cols-2 grid-cols-1 lg:gap-4 gap-10  container mx-auto'>
+        <div className='flex flex-col gap-4 col-span-2'>
           <div className='flex items-center gap-2'>
-            <img src='/images/logowhite.png' alt='logo' />
-            <span className='text-white font-bold text-[20px]'>
-              InsuranceBuzz
-            </span>
+            <img className='w-24' src='./images/logo.png' alt='logo' />
+            <div>
+              <p className='text-white font-bold text-[20px]'>InsuranceBuzz</p>
+              <p className='text-white text-sm'>
+                Insurance Simplified, Buzz Amplified
+              </p>
+            </div>
           </div>
-          <span className='text-white text-sm'>
-            Insurance Simplified, Buzz Amplified
-          </span>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-3  gap-3 md:gap-16 col-span-3 justify-center'>
+        <div className='grid grid-cols-1 md:grid-cols-3  gap-6 col-span-3 justify-center'>
           <div className='flex flex-col gap-3'>
             <span className='font-bold text-white'>Services</span>
             <Link

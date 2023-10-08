@@ -24,6 +24,11 @@ const items = [
     label: 'Life Insurance',
     children: [
       {
+        key: 'life-insurance',
+        href: '#life-insurance',
+        label: 'Life Insurance',
+      },
+      {
         key: 'term-insurance',
         href: '#term-insurance',
         label: 'Term Life Insurance',
@@ -209,7 +214,7 @@ const ResourcesPage = () => {
             items={items}
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
-            style={{ height: '100vh' }}
+            style={{ height: '100vh', fontSize: '16px', fontWeight: 'bold' }}
             theme='dark'
           />
           <div className='col-span-5 container'>{renderSection(tab)}</div>
