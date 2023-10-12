@@ -197,3 +197,24 @@ export const rrspInsuranceItems = [
     ),
   },
 ];
+
+
+export const rrpsTableData = [
+  {year: 1, annual: '7,200', total_contribution: '7,200', future_value: '7,560.00'},
+  {year: 4, annual: '7,200', total_contribution: '28,800', future_value: '31,656.45'},
+  {year: 8, annual: '7,200', total_contribution: '57,600', future_value: '65,378.19'},
+  {year: 12, annual: '7,200', total_contribution: '86,400', future_value: '100,982.12'},
+  {year: 16, annual: '7,200', total_contribution: '115,200', future_value: '139,206.65'},
+  {year: 20, annual: '7,200', total_contribution: '144,000', future_value: '180,823.09'},
+  {year: 24, annual: '7,200', total_contribution: '172,800', future_value: '226,591.45'},
+  {year: 28, annual: '7,200', total_contribution: '201,600', future_value: '276,266.25'},
+  {year: 30, annual: '7,200', total_contribution: '216,000', future_value: '300,249.74'},
+
+
+
+
+]
+
+
+
+

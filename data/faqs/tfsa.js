@@ -196,3 +196,13 @@ export const tfsaInsuranceItems = [
     ),
   },
 ];
+
+
+export const tfsaTableData = [
+  {year: 1, annual: '6,000', total_contribution: '6,000', future_value: '6,300.00'},
+  {year: 4, annual: '6,000', total_contribution: '24,000', future_value: '26,459.44'},
+  {year: 8, annual: '6,000', total_contribution: '48,000', future_value: '54,184.57'},
+  {year: 12, annual: '6,000', total_contribution: '72,000', future_value: '84,328.77'},
+  {year: 16, annual: '6,000', total_contribution: '96,000', future_value: '117,645.09'},
+  {year: 20, annual: '6,000', total_contribution: '120,000', future_value: '154,939.47'},
+]

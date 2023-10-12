@@ -34,7 +34,7 @@ export const claimInsuranceItems = [
         </p>
 
         <p>Documents verifying the insured's death may include:</p>
-        <ul className="list-disc">
+        <ul className="list-disc ml-6">
           <li>Death certificate</li>
           <li>Statement from the funeral director</li>
           <li>Coroner's report</li>
@@ -61,7 +61,7 @@ export const claimInsuranceItems = [
           death for life insurance:
         </p>
 
-        <ul className="list-disc">
+        <ul className="list-disc ml-6">
           <li>
             Most insurers do not accept a death certificate without a determined
             cause of death or if it's labeled as "pending."
@@ -97,7 +97,7 @@ export const claimInsuranceItems = [
           claim. This includes:
         </p>
 
-        <ul className="list-disc">
+        <ul className="list-disc ml-6">
           <li>Policy number</li>
           <li>Cause of death</li>
           <li>
@@ -164,7 +164,7 @@ export const claimInsuranceItems = [
           and more.
         </p>
 
-        <ul className="list-disc">
+        <ul className="list-disc ml-6">
           <li>
             <span className="text-md font-bold underline">
               Two-Year Contestability Period:
@@ -254,7 +254,7 @@ export const claimInsuranceItems = [
           claim delays. Additionally, several other reasons could contribute to
           the postponement of claims:
         </p>
-        <ul className="list-disc">
+        <ul className="list-disc ml-6">
           <li>
             <span className="font-bold text-md underline">
               Minor Beneficiary without Designated Trustee:

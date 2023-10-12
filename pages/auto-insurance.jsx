@@ -68,7 +68,7 @@ const AutoInsurance = () => {
       <div
         className="p-5 relative top-[-60px]"
         id="life-insurance"
-        style={{ background: "#A94443CC" }}
+        style={{ background: "#103825f0" }}
       >
         <h1 className="text-white font-bold text-2xl container mx-auto">
           Auto Insurance FAQs

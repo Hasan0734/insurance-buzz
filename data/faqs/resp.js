@@ -280,3 +280,54 @@ export const respInsuranceItems = [
     ),
   },
 ];
+export const respTableData = [
+  {
+    year: 1,
+    annual: "2,500",
+    grants: "500",
+    total_contribution: "3,000",
+    future_value: "3,150.00",
+  },
+  {
+    year: 4,
+    annual: "2,500",
+    grants: "500",
+    total_contribution: "3,000",
+    future_value: "14,062.43",
+  },
+  {
+    year: 7,
+    annual: "2,500",
+    grants: "500",
+    total_contribution: "3,000",
+    future_value: "26,768.31",
+  },
+  {
+    year: 10,
+    annual: "2,500",
+    grants: "500",
+    total_contribution: "3,000",
+    future_value: "41,878.53",
+  },
+  {
+    year: 13,
+    annual: "2,500",
+    grants: "500",
+    total_contribution: "3,000",
+    future_value: "60,150.43",
+  },
+  {
+    year: 16,
+    annual: "2,500",
+    grants: "500",
+    total_contribution: "3,000",
+    future_value: "82,522.22",
+  },
+  {
+    year: 18,
+    annual: "2,500",
+    grants: "500",
+    total_contribution: "3,000",
+    future_value: "100,296.26",
+  },
+];
