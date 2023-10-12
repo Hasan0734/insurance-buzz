@@ -8,11 +8,12 @@ export const lifeInsuranceItems = [
       <div className="space-y-2">
         <ul className="list-disc ml-6 space-y-2">
           <li>
-            <span className="text-md font-bold underline">
-              Term Insurance:
-            </span>{" "}
-            This type of insurance provides coverage for a specific term or
-            duration.
+            <span className="text-md font-bold underline">Term Insurance:</span>{" "}
+            It is a life insurance policy that provides coverage for a set
+            period (the "term"), offering a death benefit to beneficiaries if
+            the policyholder passes away during that time. It is a
+            straightforward, temporary insurance option primarily focused on
+            providing financial protection.
           </li>
           <li>
             <span className="text-md font-bold underline">
@@ -553,4 +554,18 @@ export const lifeInsuranceItems = [
       </div>
     ),
   },
+];
+
+export const lifeInsuranceTableData = [
+  {
+    title: "Coverages",
+    term: "Temporary",
+    life: "Permanent",
+    uni: "Permanent",
+  },
+  { title: "Cash Surrender value", term: "No", life: "Yes", uni: "Yes" },
+  { title: "Potential Growth", term: "No", life: "Yes", uni: "Yes" },
+  { title: "Investment (Self-Directed)", term: "No", life: "No", uni: "Yes" },
+  { title: "Premium Guaranteed", term: "Yes", life: "Yes", uni: "No" },
+  { title: "Cost", term: "Low", life: "Medium", uni: "High" },
 ];

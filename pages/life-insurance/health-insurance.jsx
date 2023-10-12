@@ -8,11 +8,7 @@ const HealthPage = () => {
     <>
       <HeroSection
         heading={"Health Insurance - Drug and Dental Plans"}
-        para={` Disability insurance offers protection against income loss caused by
-            the inability to work due to either permanent or temporary
-            disabilities. This type of insurance assists by replacing a portion
-            of your lost income and covering medical expenses in the event of an
-            accident resulting in disability.`}
+        para={`Consider health insurance as a safeguard for both your well-being and financial stability. It encompasses costs related to routine healthcare, dental care, and unexpected medical expenses that may not be covered by your provincial or territorial health insurance. Your unique requirements, financial situation, and budget will guide the selection of the most suitable coverage type and level for you. These plans are not only simple to purchase and manage but are also designed for straightforward comprehension.`}
         img={"/images/sub/health.jpeg"}
         color={"#eabd03cc"}
         position="10% 40%"
@@ -25,48 +21,41 @@ const HealthPage = () => {
       <div className="container mx-auto relative top-[-105px] flex flex-col gap-5">
         <div className="space-y-1">
           <h1 className="font-bold">
-            Is Dental Insurance a Valuable Investment in Canada?
+            Health Insurance
           </h1>
           <p className="text-sm text-gray-700">
-            Given that government-subsidized dental coverage is not accessible
-            to all Canadians, dental insurance might prove advantageous for
-            specific individuals. However, its value depends on individual
-            circumstances and oral health requirements.
+            Health insurance, including drug and dental plans, offers coverage
+            for prescription medications and dental care expenses. These plans
+            are designed to help individuals and families manage the costs
+            associated with essential medications and dental treatments. They
+            often include various options to choose from, allowing individuals
+            to select the level of coverage that best suits their needs and
+            budget. Health insurance with drug and dental plans provides
+            financial security and access to crucial healthcare services,
+            ensuring that individuals can maintain their overall well-being
+            without facing substantial financial burdens.
           </p>
         </div>
 
         <div className="space-y-2 mb-10">
-          <h1 className="font-bold">
-            Advantages of Having a Health Insurance - Drug & Dental Plan
-          </h1>
+          <h2 className="font-bold">Points to Remember</h2>
           <ul className="list-disc ml-6">
             <li>
-              It addresses a broad spectrum of ongoing minor healthcare expenses
-              that would otherwise be paid out of pocket.
+              <b> Tailored Coverage:</b> You have the flexibility to create a
+              personalized plan by incorporating optional coverages to suit your
+              needs, whether it's prescription drug, dental, home care, or a
+              combination like prescription drugs and home care along with
+              medical equipment.
             </li>
             <li>
-              <h1 className="font-bold">Tailored Coverage:</h1>
-              <p>
-                You have the flexibility to create a personalized plan by
-                incorporating optional coverages to suit your needs, whether
-                it's prescription drug, dental, home care, or a combination like
-                prescription drugs and home care along with medical equipment.
-              </p>
+              <b>Family Inclusion:</b> Your spouse and dependent children under
+              the age of 21 who are not employed can be included in your
+              coverage plan.
             </li>
             <li>
-              <h1 className="font-bold">Family Inclusion:</h1>
-              <p>
-                Your spouse and dependent children under the age of 21 who are
-                not employed can be included in your coverage plan.
-              </p>
-            </li>
-            <li>
-              <h1 className="font-bold">Premium Payment:</h1>
-              <p>
-                While you cannot purchase insurance for anyone else, including
-                your parents, you do have the option to cover the premium on
-                their behalf if you choose to do so.
-              </p>
+              <b>Premium Payment:</b> While you cannot purchase insurance for
+              anyone else, including your parents, you do have the option to
+              cover the premium on their behalf if you choose
             </li>
           </ul>
         </div>

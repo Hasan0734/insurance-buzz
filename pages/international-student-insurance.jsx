@@ -7,10 +7,7 @@ const StudentInsurance = () => {
     <>
       <HeroSection
         heading={"International Student Insurance"}
-        para={`Ensure your family's future even when you're not there - life
-            insurance offers the peace of mind that your loved ones will be
-            financially secure. It's a lasting gift that guarantees protection
-            and support, no matter what life brings.`}
+        para={`Embarking on a journey to study in a new place can be both thrilling and intimidating. Student travel insurance ensures that you are well-protected in the event of any unforeseen emergencies.`}
         img={"/images/new/international-student-insurance.jpg"}
         color={"#A94443CC"}
         position="top"
@@ -45,17 +42,16 @@ const StudentInsurance = () => {
           <h2 className="font-bold text-lg">Points to Remember</h2>
           <ul className="list-disc ml-6">
             <li className="text-md">
-              Students studying abroad are not covered by their home country's
-              public healthcare system.
+              Public healthcare does not extend coverage to students studying in
+              foreign countries.
             </li>
             <li className="text-md">
-              Student travel medical insurance offers substantial coverage for
-              emergencies, often reaching into the millions.
+              Student travel medical insurance offers extensive coverage,
+              including millions for emergency situations.
             </li>
             <li className="text-md">
-              These insurance policies cater to both Canadian students traveling
-              overseas for their studies and international students coming to
-              Canada for educational purposes.
+              These policies cater to both Canadian students studying abroad and
+              international students coming to Canada for their education.
             </li>
           </ul>
         </div>
@@ -67,7 +63,7 @@ const StudentInsurance = () => {
         style={{ background: "#A94443CC" }}
       >
         <h1 className="text-white font-bold text-2xl container mx-auto">
-        International Students Insurance FAQs
+          International Students Insurance FAQs
         </h1>
         <Collapse
           ghost

@@ -1,97 +1,75 @@
-import { CoverageDetail } from '@/components/CoverageDetail';
-import { HeroSection } from '@/components/HeroSection/HeroSection';
-import { Collapse } from 'antd';
+import { CoverageDetail } from "@/components/CoverageDetail";
+import { HeroSection } from "@/components/HeroSection/HeroSection";
+import { Collapse } from "antd";
 
-import { travelInsuranceItems } from '@/data/faqs/travel-insurance';
+import { travelInsuranceItems } from "@/data/faqs/travel-insurance";
 const TravelInsurancePage = () => {
   return (
     <>
       <HeroSection
-        heading={'Travel Insurance'}
+        heading={"Travel Insurance"}
         para={`Travel insurance is a form of insurance designed to assist in
             covering medical expenses in the event of illness or injury while
             traveling. Additionally, it provides protection against financial
             losses stemming from trip cancellations or interruptions.`}
-        color={'#252835cc'}
-        img={'/images/sub/travel.jpg'}
+        color={"#252835cc"}
+        img={"/images/sub/travel.jpg"}
       />
 
-      <div className='relative top-[-165px]'>
+      <div className="relative top-[-165px]">
         <CoverageDetail />
       </div>
 
-      <div className='container mx-auto relative top-[-105px] flex flex-col gap-5'>
-        <div className='space-y-1'>
-          <h1 className='font-bold'>
-            What should be included in travel medical insurance for trips
-            outside Canada?
-          </h1>
-          <p className='text-sm text-gray-700'>
-            Irrespective of your global destination, there are three fundamental
-            medical aspects that your travel health insurance policy should
-            consistently encompass: the provision for medical evacuation if
-            necessitated, coverage for any pre-existing medical conditions you
-            might have, and repatriation benefits that address the cost of
-            repatriating your remains in case of demise during your journey.
-          </p>
-          <p className='text-sm text-gray-700'>
-            Each travel medical insurance plan maintains its distinctiveness,
-            with a multitude of options accessible during the application
-            process.
+      <div className="container mx-auto relative top-[-105px] flex flex-col gap-5">
+        <div className="space-y-1">
+          <h1 className="font-bold">Travel Insurance</h1>
+          <p className="text-sm text-gray-700">
+            Snowbird travel insurance is a specialized insurance product crafted
+            for Canadians who embark on extended journeys beyond their home
+            province or territory. Typically, this insurance caters primarily to
+            seniors, as they form the predominant demographic among snowbirds.
+            Each year, numerous Canadians bid farewell to the frigid embrace of
+            the Great White North as they commence lengthy journeys abroad to
+            evade the harsh winter chill. However, akin to numerous wanderers,
+            the matter of insurance might not even cross the minds of these
+            snowbirds until they find themselves on the airplane. Regrettably,
+            by that point, it could be too late. While travel insurance can
+            offer sufficient coverage for unexpected expenses on shorter trips,
+            the question arises: what do Canadians turn to for tranquility when
+            they find themselves spending extended periods overseas? This
+            article will delve deeply into how snowbirds can ensure they have
+            adequate coverage should they encounter unforeseen emergencies
+            during their absence from home.
           </p>
         </div>
 
-        <div className='space-y-1'>
-          <h1 className='font-bold'>
-            The majority of travel medical insurance policies generally
-            encompass:
-          </h1>
+        <div className="space-y-1">
+          <h1 className="font-bold">Points to Remember</h1>
 
-          <ul className='list-disc ml-4'>
-            <li className='text-sm text-gray-700'>
-              Urgent medical treatment for sickness or injury.
+          <ul className="list-disc ml-4">
+            <li className="">
+              Travel coverage comes in two forms: travel medical insurance and
+              trip interruption/cancellation coverage.
             </li>
-            <li className='text-sm text-gray-700'>
-              Prescription medication coverage.
+            <li className="">
+              Travel medical insurance holds greater importance because medical
+              costs overseas can escalate significantly during emergencies while
+              you are abroad.
             </li>
-            <li className='text-sm text-gray-700'>
-              Emergency dental treatment services.
-            </li>
-            <li className='text-sm text-gray-700'>
-              Vital medical apparatus (such as crutches, wheelchairs, braces,
-              slings, etc.).
-            </li>
-            <li className='text-sm text-gray-700'>
-              Diagnostic procedures like X-rays and various laboratory tests
-              (including bloodwork, ultrasounds, etc.).
-            </li>
-            <li className='text-sm text-gray-700'>
-              Necessary ground, air, or sea ambulance services.
-            </li>
-            <li className='text-sm text-gray-700'>
-              Follow-up appointments with healthcare providers post-medical
-              treatment.
-            </li>
-            <li className='text-sm text-gray-700'>
-              Medical evacuation services.
-            </li>
-            <li className='text-sm text-gray-700'>
-              Ambulance transportation to the nearest medical facility.
-            </li>
-            <li className='text-sm text-gray-700'>
-              Provision for meal and lodging expenses during waiting periods for
-              medical care.
+            <li>
+              Several comprehensive travel coverage choices are available from
+              major insurance providers in Canada.
             </li>
           </ul>
         </div>
       </div>
 
       <div
-        className='p-5 relative top-[-60px]'
-        id='life-insurance'
-        style={{ background: '#ED8B09' }}
+        className="p-5 relative top-[-60px]"
+        id="life-insurance"
+        style={{ background: "#ED8B09" }}
       >
-        <h1 className='text-white font-bold text-2xl container mx-auto'>
+        <h1 className="text-white font-bold text-2xl container mx-auto">
           Travel Insurance FAQs
         </h1>
         <Collapse
