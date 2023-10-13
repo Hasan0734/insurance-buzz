@@ -25,13 +25,13 @@ const TopNav = () => {
   }, [router.asPath])
   return (
     <div>
-      <div className='flex sm:flex-row flex-col justify-between items-center max-w-7xl xl:px-0 px-5 m-auto '>
+      <div className='flex sm:flex-row flex-col justify-between items-center'>
         <div
           onClick={() => router.push('/')}
           className='cursor-pointer flex items-center gap-2'
         >
-          <img className='h-16' src='/images/logo.png' alt='logo' />
-          <div className='flex flex-col'>
+         
+          <div className='flex flex-col pl-2'>
             <p className='text-white font-bold text-[26px] m-0'>
               InsuranceBuzz
             </p>

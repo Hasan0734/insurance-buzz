@@ -231,9 +231,7 @@ export default function MainNav() {
       {({ open }) => (
         <>
           <div
-            className={`mx-auto xl:px-0 ${
-              !sticky && 'border-b border-white'
-            } px-5 max-w-7xl `}
+            className={`mx-auto xl:px-0  px-5 max-w-7xl `}
           >
             <div className='relative flex h-10 items-center justify-between'>
               <div className='absolute inset-y-0 left-0 flex items-center lg:hidden'>

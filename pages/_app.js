@@ -1,56 +1,65 @@
-import MainFooter from '@/components/Footer/MainFooter'
-import Prefooter from '@/components/Footer/Prefooter'
-import MainNav from '@/components/Navbar/MainNav'
-import TopNav from '@/components/Navbar/TopNav'
-import styles from '@/styles/navbar.module.css'
-import '@/styles/globals.css'
-import '@/styles/anchor.css'
+import MainFooter from "@/components/Footer/MainFooter";
+import Prefooter from "@/components/Footer/Prefooter";
+import MainNav from "@/components/Navbar/MainNav";
+import TopNav from "@/components/Navbar/TopNav";
+import styles from "@/styles/navbar.module.css";
+import "@/styles/globals.css";
+import "@/styles/anchor.css";
 
-import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
-import dynamic from 'next/dynamic'
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const CrispWithNoSSR = dynamic(
-  () => import('../components/CrispChat/CrispChat'),
+  () => import("../components/CrispChat/CrispChat"),
   { ssr: false }
-)
+);
 
 export default function App({ Component, pageProps }) {
-  const [sticky, setSticky] = useState(false)
+  const [sticky, setSticky] = useState(false);
 
-  const router = useRouter()
-  const isResourcesPage = router.pathname === '/resources'
+  const router = useRouter();
+  const isResourcesPage = router.pathname === "/resources";
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 100) {
-        setSticky(true)
+        setSticky(true);
       } else {
-        setSticky(false)
+        setSticky(false);
       }
-    }
+    };
 
     // Add the scroll event listener
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     // Clean up the event listener when the component unmounts or route changes
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [router.asPath])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [router.asPath]);
 
   return (
     <>
       <div className={`${sticky ? styles.sticky : styles.notSticky} `}>
-        <TopNav />
-        <MainNav />
+        <div className={`flex items-center gap-3 max-w-7xl xl:px-0 px-5 m-auto ${
+              !sticky && 'border-b border-white'
+            }`}>
+          <div className="py-2">
+            <img className="h-24" src="/images/logo.png" alt="logo" />
+          </div>
+          <div className="flex-grow">
+            <TopNav />
+            <MainNav />
+          </div>
+        </div>
       </div>
       <FloatingWhatsApp
-        phoneNumber='+16474698766'
-        accountName='InsuranceBuzz Advisor'
+        phoneNumber="+16474698766"
+        accountName="InsuranceBuzz Advisor"
         chatMessage={`Hello! 🤝 \nHow may I help you?`}
-        avatar='/images/logo.png'
+        avatar="/images/logo.png"
       />
       {/* <CrispWithNoSSR /> */}
       <Component {...pageProps} />
@@ -60,5 +69,5 @@ export default function App({ Component, pageProps }) {
         <MainFooter />
       </div>
     </>
-  )
+  );
 }
