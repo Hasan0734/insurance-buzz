@@ -30,7 +30,6 @@ const TopNav = () => {
           onClick={() => router.push('/')}
           className='cursor-pointer flex items-center gap-2'
         >
-         
           <div className='flex flex-col pl-2'>
             <p className='text-white font-bold text-[26px] m-0'>
               InsuranceBuzz
@@ -45,8 +44,7 @@ const TopNav = () => {
           <div className=' sm:flex hidden gap-3 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
             <img src='/images/navbarPhone.png' alt='navbar' />
             <div className='flex flex-col'>
-              <span className='text-sm text-white'>Insurance Advisor</span>
-              <span className='text-sm text-white'>+1 (647) 469-8766</span>
+              <span className='text-lg text-white'>+1 (647) 469-8766</span>
             </div>
           </div>
         </div>
