@@ -1,4 +1,10 @@
-export const HeroSection = ({ img, heading, para, color, position = "center" }) => {
+export const HeroSection = ({
+  img,
+  heading,
+  para,
+  color,
+  position = 'center',
+}) => {
   return (
     <div
       className=' relative top-[-165px]'
@@ -17,10 +23,10 @@ export const HeroSection = ({ img, heading, para, color, position = "center" }) 
         <span className='text-[48px] text-white text-center font-bold drop-shadow-lg'>
           {heading}
         </span>
-        <span className='lg:w-[50%] sm:w-[70%] text-white w-[100%] text-center m-auto'>
+        <span className='lg:w-[50%] sm:w-[70%] text-white w-[100%] text-center m-auto line-clamp-3'>
           {para}
         </span>
       </div>
     </div>
-  );
-};
+  )
+}

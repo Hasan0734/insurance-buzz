@@ -2,13 +2,13 @@ import React from "react";
 import {  Collapse } from "antd";
 import { visitorCanadaInsuranceItems } from "@/data/faqs/visitor-canada-insurance";
 
-const VisitorCanada = () => {
+const VisitorCanada = ({color}) => {
   return (
     <>
       <div
         id="critical-insurance"
         className="p-4"
-        style={{ minHeight: "100vh", background: "#308b84" }}
+        style={{ minHeight: "100vh", background: `${color}` }}
       >
         <h1 className="text-white font-bold text-2xl">
         Visitor to Canada Insurance
@@ -16,7 +16,6 @@ const VisitorCanada = () => {
         <Collapse
           ghost
           items={visitorCanadaInsuranceItems}
-          // defaultActiveKey={['1']}
         />
       </div>
     </>

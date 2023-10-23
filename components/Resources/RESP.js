@@ -1,13 +1,13 @@
 import React from "react";
 import {  Collapse } from "antd";
 import { respInsuranceItems } from "@/data/faqs/resp";
-const RESP = () => {
+const RESP = ({color}) => {
   return (
     <>
       <div
         id="resp"
         className="p-4"
-        style={{ minHeight: "100vh", background: "#5393becc" }}
+        style={{ minHeight: "100vh", background: `${color}` }}
       >
         <h1 className="text-white font-bold text-2xl">RESP Insurance FAQs</h1>
         <Collapse

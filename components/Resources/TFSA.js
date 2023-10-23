@@ -2,13 +2,13 @@ import React from "react";
 import {  Collapse } from "antd";
 import { tfsaInsuranceItems } from "@/data/faqs/tfsa";
 
-const TFSA = () => {
+const TFSA = ({color}) => {
   return (
     <>
       <div
         id="tfsa"
         className="p-4"
-        style={{ minHeight: "100vh", background: "#9AB88CCC" }}
+        style={{ minHeight: "100vh", background: `${color}`}}
       >
         <h1 className="text-white font-bold text-2xl">TFSA Insurance FAQs</h1>
         <Collapse

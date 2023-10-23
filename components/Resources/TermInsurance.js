@@ -3,13 +3,13 @@ import {  Collapse } from "antd";
 import { termLifeInsuranceItems } from "@/data/faqs/term-life-insurance";
 
 
-const TermInsurance = () => {
+const TermInsurance = ({color}) => {
   return (
     <>
       <div
         id="term-insurance"
         className="p-4"
-        style={{ minHeight: "100vh", background: "#ed8b08" }}
+        style={{ minHeight: "100vh", background: `${color}` }}
       >
         <h1 className="text-white font-bold text-2xl">Term Insurance FAQs</h1>
         <Collapse

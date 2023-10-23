@@ -4,13 +4,13 @@ import { superVisaInsuranceFAQs } from "@/data/faqs/super-visa-insurance";
 
 
 
-const SuperVisaInsurance = () => {
+const SuperVisaInsurance = ({color}) => {
   return (
     <>
       <div
         className="p-4"
         id="supervisa-insurance"
-        style={{ minHeight: "100vh", background: "#d6b940" }}
+        style={{ minHeight: "100vh", background: `${color}` }}
       >
         <h1 className="text-white font-bold text-2xl">
           Super Visa Insurance FAQs

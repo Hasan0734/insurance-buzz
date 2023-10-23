@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-const ImportantLinks = () => {
+const ImportantLinks = ({color}) => {
   return (
     <>
       <div
         id="important-links"
         className="p-4"
-        style={{ minHeight: "100vh", background: "#237a23" }}
+        style={{ minHeight: "100vh", background: `${color}` }}
       >
         <div className=" container mx-auto">
           <h2 className="text-3xl font-bold text-white">Important Links</h2>
