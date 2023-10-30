@@ -18,8 +18,9 @@ const SuperVisaQoute = () => {
     console.log(date, dateString);
   };
 
-  // const days = dayjs(new Date()).diff(dayjs("21/08/2003", dateFormat), "year");
+  const days = dayjs( "29/10/2024", dateFormat).diff(dayjs( "30/10/2023", dateFormat), "day");
 
+  console.log(days)
 
   return (
     <div className="mx-auto max-w-xl">
@@ -32,7 +33,7 @@ const SuperVisaQoute = () => {
           dob: "",
           age: "",
           start_date: new Date(),
-          end_date: new Date(),
+          end_date: '',
           days: 365,
           coverage: "100000",
           pemc: "NO",
@@ -88,13 +89,20 @@ const SuperVisaQoute = () => {
                 </div>
                 <DatePicker
                   defaultValue={dayjs(values.start_date)}
+                  // value={values.start_date ? dayjs(values.start_date) : '' }
                   format={dateFormat}
                   size="large"
                   className=""
                   name="start_date"
                   id="start_date"
                   placeholder="Start Date"
-                  onChange={onChange}
+                  onChange={(date, dateString) => {
+                    const days = dayjs( dayjs(values.start_date).add(1, "year"), dateFormat).diff(dayjs( values.start_date, dateFormat), "day")
+                    console.log(dateString)
+                    setFieldValue('days', days)
+                    setFieldValue('end_date', dayjs(values.start_date).add(1, "year"))
+                    setFieldValue("start_date", dateString)
+                  }}
                 />
               </div>
               <div>
@@ -102,8 +110,9 @@ const SuperVisaQoute = () => {
                   <label htmlFor="end_date">End Date</label>
                 </div>
                 <DatePicker
-                  defaultValue={dayjs(values.start_date).add(1, "year")}
+                  defaultValue={dayjs(values.end_date, dateFormat)}
                   format={dateFormat}
+                  // value={values.end_date ?  dayjs(values.end_date) : ''}
                   size="large"
                   disabled
                   className=""
@@ -122,10 +131,8 @@ const SuperVisaQoute = () => {
                 </div>
                 <InputNumber
                   size="large"
-                  defaultValue={dayjs(values.start_date).diff(
-                    values.end_date,
-                    "day"
-                  )}
+                  value={values.days}
+                  defaultValue={dayjs( "29/10/2024", dateFormat).diff(dayjs( values.start_date, dateFormat), "day")}
                   id="days"
                   name="days"
                   disabled
