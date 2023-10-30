@@ -60,6 +60,7 @@ const DateOfBirth = ({
             min={40}
             value={ageValue}
             defaultValue={40}
+            onChange={(e) => setFieldValue(ageName, e)}
           />
         </div>
       </div>
