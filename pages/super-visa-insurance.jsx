@@ -1,5 +1,5 @@
-import { CoverageDetail } from "@/components/CoverageDetail";
 import { HeroSection } from "@/components/HeroSection/HeroSection";
+import SuperVisaQoute from "@/components/SuperVisaQoute";
 import { superVisaInsuranceFAQs } from "@/data/faqs/super-visa-insurance";
 import { Collapse } from "antd";
 const SuperVisa = () => {
@@ -17,8 +17,8 @@ const SuperVisa = () => {
         position="10% 27%"
       />
 
-      <div className="relative top-[-165px]">
-        <CoverageDetail />
+      <div className="relative top-[-165px] py-20 ">
+        <SuperVisaQoute />
       </div>
 
       <div className="container mx-auto relative top-[-105px] flex flex-col gap-5">
