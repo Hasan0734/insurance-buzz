@@ -4,7 +4,7 @@ const PlanCard = ({qoute}) => {
     
   return (
     <>
-      <div className="p-5 shadow-md rounded-md flex items-center justify-evenly mb-5">
+      <div className="p-5 shadow-md rounded-md flex items-center justify-evenly mb-5 border">
         <div className="flex items-center justify-evenly gap-4 flex-grow">
           <div className="w-[150px]">
             <img src={qoute.logo} alt="logo"/>

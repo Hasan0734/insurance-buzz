@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 import { Formik } from "formik";
-import { Radio, Popover, Button } from "antd";
+import { Radio } from "antd";
 import dayjs from "dayjs";
 import DateOfBirth from "./DateOfBirth";
 import Coverage from "./Coverage";
-import {
-  MinusIcon,
-  PlusIcon,
-  QuestionMarkCircleIcon,
-} from "@heroicons/react/24/outline";
+import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import StartEndDay from "./StartEndDay";
 
 import axios from "axios";
 import { baseURL } from "@/utils/helper";
 import { toast } from "react-toastify";
 import PlanCard from "./PlanCard";
+import Sidebar from "./Sidebar";
 
 const dateFormat = "DD/MM/YYYY";
 
@@ -30,6 +27,11 @@ const SuperVisaQoute = () => {
     if (values.type === "SINGLE") {
       url = `/single?age=${values.age1}&coverage=${values.coverage1}&preExistingMedicalConditions=${values.preExistingMedicalConditions1}`;
     }
+
+    if (values.type === "DOUBLE") {
+      url = `/couple?age1=${values.age1}&age2=${values.age2}&coverage1=${values.coverage1}&coverage2=${values.coverage2}&preExistingMedicalConditions1=${values.preExistingMedicalConditions}&preExistingMedicalConditions2=${values.preExistingMedicalConditions1}`;
+    }
+
     console.log({ url });
     const res = await axios.get(`${baseURL}/qoutes/superVisa${url}`);
     if (res.status === 200) {
@@ -45,7 +47,7 @@ const SuperVisaQoute = () => {
   return qoutes?.length > 0 ? (
     <div className="container mx-auto">
       <div className="grid grid-cols-5 gap-5">
-        <div className="col-span-2 h-[600px] bg-gray-300"></div>
+        <Sidebar />
         <div className="col-span-3">
           {qoutes.map((qoute) => (
             <PlanCard key={qoute._id} qoute={qoute} />
