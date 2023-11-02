@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 import axios from "axios";
 import { baseURL } from "@/utils/helper";
 import { toast } from "react-toastify";
@@ -8,27 +7,36 @@ import PlanCard from "../QouteForm/PlanCard";
 import Sidebar from "./Sidebar";
 import QouteForm from "../QouteForm/QouteForm";
 
-const StudentInsuranceQoute = () => {
+const TravelInsuranceQoute = () => {
   const [qoutes, setQoutes] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const getQoute = async (values) => {
     setLoading(true);
     let url = "";
-    if (values.type === "SINGLE") {
-      url = `/single?age1=${values.age1}&days1=${values.days1}`;
+
+    if (values.trip === "SINGLE") {
+      if (values.type === "SINGLE") {
+        url = `/singleTrip/single?age1=${values.age1}&days=${values.days1}&travelingto=${values.travelling}`;
+      }
+      if (values.type === "DOUBLE") {
+        url = `/singleTrip/couple?age1=${values.age1}&age2=${values.age2}&days=${values.days1}&travelingto=${values.travelling}`;
+      }
+      if (values.type === "FAMILY") {
+        url = `/singleTrip/family?age1=${values.age1}&age2=${values.age2}&days=${values.days1}&noOfDependents=${values.dependents}&travelingto=${values.travelling}`;
+      }
     }
 
-    if (values.type === "DOUBLE") {
-      url = `/couple?age1=${values.age1}&age2=${values.age2}&days1=${values.days1}`;
+    if(values.trip === "MULTI"){
+      if (values.type === "SINGLE") {
+        url = `/multiTrip/single?age1=${values.age1}&tripDuration=${values.tripDuration}`;
+      }
+      if (values.type === "FAMILY") {
+        url = `/multiTrip/family?age1=${values.age1}&age2=${values.age2}&noOfDependents=${values.dependents}&tripDuration=${values.tripDuration}`;
+      }
     }
-    if(values.type === "FAMILY"){
-      url = `/family?age1=${values.age1}&age2=${values.age2}&days1=${values.days1}&noOfDependents=${values.dependents}`;
 
-    }
-
-
-    const res = await axios.get(`${baseURL}/qoutes/student${url}`);
+    const res = await axios.get(`${baseURL}/qoutes${url}`);
 
     if (res.status === 200) {
       if (!res.data.length) {
@@ -58,12 +66,8 @@ const StudentInsuranceQoute = () => {
       </div>
     </div>
   ) : (
-    <QouteForm
-      getQoute={getQoute}
-      loading={loading}
-      insuranceType={"student"}
-    />
+    <QouteForm getQoute={getQoute} loading={loading} insuranceType={"travel"}  />
   );
 };
 
-export default StudentInsuranceQoute;
+export default TravelInsuranceQoute;

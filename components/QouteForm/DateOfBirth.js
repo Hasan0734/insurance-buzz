@@ -21,13 +21,13 @@ const DateOfBirth = ({
         <div>
           <div>
             <label className="" htmlFor="dob">
-             {insuranceType === "supervisa" ?"" : ownerField} Date of Birth or Age
+             {insuranceType === "supervisa" ? "" : ownerField} Date of Birth or Age
             </label>
           </div>
           <DatePicker
             format={dateFormat}
             size="large"
-            className=""
+            className={insuranceType === "supervisa" ? "" : "w-72"}
             name={name}
             id={name}
             placeholder="Date of Birth"
@@ -60,6 +60,7 @@ const DateOfBirth = ({
             name={ageName}
             size="large"
             min={ insuranceType=== "supervisa" ? 40 : 0}
+            max={90}
             value={ageValue}
             defaultValue={40}
             onChange={(e) => setFieldValue(ageName, e)}

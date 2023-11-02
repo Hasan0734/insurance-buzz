@@ -40,9 +40,9 @@ const StartEndDay = ({
                 const days = dayjs(
                   dayjs(dateString, dateFormat).add(1, "year").add(-1, "days")
                 ).diff(dayjs(dateString, dateFormat), "day");
-  
+
                 setFieldValue(daysName, days);
-              
+
                 setFieldValue(
                   end_date,
                   dayjs(dateString, dateFormat)
@@ -51,12 +51,11 @@ const StartEndDay = ({
                     .format(dateFormat)
                 );
               } else {
-                const days = dayjs(
-                  dayjs(end_value, dateFormat)
-                ).diff(dayjs(dateString, dateFormat), "day");
+                const days = dayjs(dayjs(end_value, dateFormat)).diff(
+                  dayjs(dateString, dateFormat),
+                  "day"
+                );
                 setFieldValue(daysName, days);
-
-            
               }
             }}
             {...attribute}
@@ -72,22 +71,21 @@ const StartEndDay = ({
             value={end_value ? dayjs(end_value, dateFormat) : ""}
             size="large"
             onChange={(data, dateString) => {
-              if( insuranceType === "supervisa"){
-
-              }else{
+              if (insuranceType === "supervisa") {
+              } else {
                 setFieldValue(end_date, dateString);
-                const days = dayjs(
-                  dayjs(dateString, dateFormat)
-                ).diff(dayjs(start_value, dateFormat), "day");
+                const days = dayjs(dayjs(dateString, dateFormat)).diff(
+                  dayjs(start_value, dateFormat),
+                  "day"
+                );
                 setFieldValue(daysName, days);
               }
-                
             }}
             className=""
             name={end_date}
             id={end_date}
             placeholder="End Date"
-            disabled={insuranceType  === "supervisa"}
+            disabled={insuranceType === "supervisa"}
           />
         </div>
         <span className="mt-4">or</span>
@@ -106,7 +104,8 @@ const StartEndDay = ({
             )}
             id={daysName}
             name={daysName}
-            disabled={insuranceType  === "supervisa"}
+            disabled={insuranceType === "supervisa"}
+            onChange={(days) => setFieldValue(daysName, days)}
           />
         </div>
       </div>
