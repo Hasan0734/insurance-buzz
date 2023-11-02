@@ -10,16 +10,18 @@ const DateOfBirth = ({
   ageValue,
   value,
   setFieldValue,
+  ownerField,
+  insuranceType
 }) => {
 
-    console.log(value)
+
   return (
     <>
       <div className="flex items-center gap-3">
         <div>
           <div>
             <label className="" htmlFor="dob">
-              Date of Birth
+             {insuranceType === "supervisa" ?"" : ownerField} Date of Birth or Age
             </label>
           </div>
           <DatePicker
@@ -31,17 +33,17 @@ const DateOfBirth = ({
             placeholder="Date of Birth"
             value={value ? dayjs(value, dateFormat) : ""}
             onChange={(date, dateString) => {
+              console.log(dateString)
               const year = dayjs(new Date()).diff(
                 dayjs(dateString, dateFormat),
                 "year"
               );
-              console.log({year})
-              if (40 > year) {
+              
+              if ( insuranceType === "supervisa" && 40 > year) {
                 toast.warning("Your are selected under age!!");
                 return;
               }
               setFieldValue(name, dateString);
-
               setFieldValue(ageName, year);
             }}
           />
@@ -57,7 +59,7 @@ const DateOfBirth = ({
             id={ageName}
             name={ageName}
             size="large"
-            min={40}
+            min={ insuranceType=== "supervisa" ? 40 : 0}
             value={ageValue}
             defaultValue={40}
             onChange={(e) => setFieldValue(ageName, e)}
